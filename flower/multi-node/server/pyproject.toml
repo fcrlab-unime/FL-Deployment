@@ -37,7 +37,7 @@ local-epochs = 1
 learning-rate = 0.01
 batch-size = 32
 model = "dnn"
-dataset = "mnist"
+dataset-name = "mnist"
 num-partitions = 2
 
 [tool.flwr.federations]
