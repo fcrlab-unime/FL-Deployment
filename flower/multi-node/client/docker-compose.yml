@@ -32,7 +32,7 @@ services:
     volumes:
       - ./dataset:/app/dataset
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./${MODEL}:/app/model
+      - ../../../models:/app/models
     environment:
       - SUPERLINK_IP=${SUPERLINK_IP}
       - SUPERLINK_PORT=${SUPERLINK_PORT}
