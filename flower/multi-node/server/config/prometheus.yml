@@ -1,0 +1,27 @@
+
+global:
+  scrape_interval:     1s
+  evaluation_interval: 1s
+
+rule_files:
+scrape_configs:
+  - job_name: 'cadvisor-clients'
+    scrape_interval: 5s 
+    metrics_path: '/metrics'
+    static_configs:
+      - targets:
+          - 172.17.6.4:8080  # Client 1's cAdvisor
+          - 172.17.6.6:8080  # Client 2's cAdvisor
+          - 172.17.6.9:8080  # Client 2's cAdvisor
+          - 172.17.6.13:8080  # Client 2's cAdvisor
+          - 172.17.6.15:8080  # Client 2's cAdvisor
+
+  - job_name: 'server_metrics'
+    scrape_interval: 1s
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['aggregator:8001']
+  # - job_name: 'docker-desktop'
+  #   scrape_interval: 1s
+  #   static_configs:
+  #     - targets: ['host.docker.internal:9323']

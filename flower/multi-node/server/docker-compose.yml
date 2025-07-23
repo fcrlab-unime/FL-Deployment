@@ -1,0 +1,69 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  aggregator:
+    build: .
+    container_name: aggregator
+    ports:
+      - "8080:8080" # Flower SuperLink
+      - "9091:9091"
+      - "9092:9092" 
+      - "9093:9093" # Flower Dashboard
+      - "8001:8001" # Prometheus metrics
+    volumes:
+      - ./dataset:/app/data
+      - ./model:/app/model
+    deploy:
+      restart_policy:
+        condition: on-failure
+    networks:
+      - default
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9095:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - aggregator
+    networks:
+      - default
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "9094:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./config/grafana.ini:/etc/grafana/grafana.ini
+      - ./config/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ./config/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - prometheus
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+
+volumes:
+  grafana-storage:
+  model-storage:
+  dataset-storage:
