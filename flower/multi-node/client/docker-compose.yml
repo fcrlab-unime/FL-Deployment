@@ -34,11 +34,11 @@ services:
     volumes:
       - ./dataset:/app/dataset
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./model:/app/model
+      - ./model_dnn:/app/model
     environment:
       - SUPERLINK_IP=172.17.4.207
       - SUPERLINK_PORT=9092
-      - DATASET_PATH=/app/dataset/fashionmnist_part_${CLIENT_N}
+      - DATASET_PATH=/app/dataset/mnist_part_${CLIENT_N}
       - FLASK_RUN_PORT=6001
       - container_name=client${CLIENT_N}
       - DOCKER_HOST_IP=host.docker.internal
