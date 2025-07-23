@@ -2,6 +2,9 @@ import torch
 from flwr.client import ClientApp, NumPyClient
 from flwr.common import Context
 import importlib
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 # Define Flower Client
 class FlowerClient(NumPyClient):
@@ -57,9 +60,14 @@ def client_fn(context: Context):
         raise ValueError(f"Could not load model '{model_name.upper()}' from 'models/{model_name}.py'") from e
 
     # Read client-specific configuration
-    dataset_path = context.node_config["dataset-path"]
     num_partitions = context.run_config["num-partitions"]
-    dataset_path = dataset_path.replace("#", f"{num_partitions}").replace("<DATASET_NAME>", context.run_config["dataset-name"])
+    logging.info(f"Number of partitions: {num_partitions}")
+    logging.info(context.run_config["dataset-name"])
+    dataset_path = context.node_config["dataset-path"].replace("#", f"{num_partitions}")
+    dataset_path = dataset_path.replace('DATASET_NAME', context.run_config["dataset-name"])
+    logging.info(f"Using dataset path: {dataset_path}")
+    logging.info(f"Using dataset path: {dataset_path[:-1]}")  # Remove trailing slash if any
+
     # Read run-specific hyperparameters
     batch_size = context.run_config["batch-size"]
     local_epochs = context.run_config["local-epochs"]
