@@ -1,0 +1,12 @@
+#Flower framework
+flwr>=1.15.2
+
+#PyTorch and torchvision for the model and data transformations
+torch
+torchvision
+
+#Datasets library for data loading
+datasets==3.1.0
+
+#Flower Datasets for easy access to federated datasets
+flwr-datasets[vision,audio]
