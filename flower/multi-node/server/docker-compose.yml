@@ -14,7 +14,7 @@ services:
       - "8001:8001" # Prometheus metrics
     volumes:
       - ./dataset:/app/data
-      - ./model_dnn:/app/model
+      - ../../../models:/app/models
     deploy:
       restart_policy:
         condition: on-failure
