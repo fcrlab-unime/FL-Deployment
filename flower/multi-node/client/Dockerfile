@@ -36,7 +36,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN mkdir -p /app/data /app/model
 
 # Copy and set permissions for the entrypoint script
-COPY client_app.py /app/client_app.py
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 

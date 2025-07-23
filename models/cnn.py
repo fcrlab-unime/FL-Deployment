@@ -6,6 +6,9 @@ from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, ToTensor, Normalize
 from datasets import load_from_disk
 
+import logging
+logging.basicConfig(level=logging.INFO)
+
 class CNN(nn.Module):
     """A self-contained model class with its own training, testing, and data logic."""
 
@@ -63,7 +66,10 @@ class CNN(nn.Module):
         optimizer = torch.optim.SGD(self.parameters(), lr=learning_rate, momentum=0.9)
         self.train()
         for _ in range(epochs):
-            for batch in trainloader:
+            logging.info(f"Training epoch {_ + 1}/{epochs}")
+            for idx, batch in enumerate(trainloader):
+                # Use 'img' key for CIFAR-10
+                logging.info(f"Processing batch {idx + 1}/{len(trainloader)}")
                 images = batch["image"].to(device)
                 labels = batch["label"].to(device)
                 optimizer.zero_grad()

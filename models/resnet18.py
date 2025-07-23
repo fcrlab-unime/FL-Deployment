@@ -7,6 +7,9 @@ from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, ToTensor, Normalize
 from torchvision.models import resnet18
 from datasets import load_from_disk
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 class RESNET18(nn.Module):
     """A self-contained ResNet-18 model class for CIFAR-10."""
@@ -63,8 +66,10 @@ class RESNET18(nn.Module):
         optimizer = torch.optim.Adam(self.parameters(), lr=learning_rate)
         self.train()
         for _ in range(epochs):
-            for batch in trainloader:
+            logging.info(f"Training epoch {_ + 1}/{epochs}")
+            for idx, batch in enumerate(trainloader):
                 # Use 'img' key for CIFAR-10
+                logging.info(f"Processing batch {idx + 1}/{len(trainloader)}")
                 images = batch["img"].to(device)
                 labels = batch["label"].to(device)
                 optimizer.zero_grad()

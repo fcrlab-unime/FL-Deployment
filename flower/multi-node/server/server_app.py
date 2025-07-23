@@ -15,8 +15,8 @@ from flwr.server import ServerApp, ServerAppComponents, ServerConfig
 from flwr.server.client_proxy import ClientProxy
 from flwr.server.strategy import FedAvg
 from prometheus_client import Gauge, start_http_server
+import importlib
 
-from model.model import Net, get_weights
 
 # --- Prometheus Metrics Definition ---
 # Define a gauge to track the global model accuracy
@@ -93,10 +93,19 @@ def server_fn(context: Context):
 
     # Read from config
     num_rounds = context.run_config["num-server-rounds"]
+    model_name = context.run_config["model"] # e.g., "cnn", "dnn", "resnet18"
+    
+    # Dynamically import the model class from the correct file
+    try:
+        module = importlib.import_module(f"models.{model_name}")
+        # Assumes the class name is the uppercase version of the file name
+        Net = getattr(module, model_name.upper()) 
+    except (ImportError, AttributeError) as e:
+        raise ValueError(f"Could not load model '{model_name.upper()}' from 'models/{model_name}.py'") from e
     
 
     # Initialize model parameters
-    ndarrays = get_weights(Net())
+    ndarrays = Net().get_weights()
     parameters = ndarrays_to_parameters(ndarrays)
 
     # Define the custom strategy

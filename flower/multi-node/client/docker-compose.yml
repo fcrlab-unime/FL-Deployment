@@ -36,7 +36,7 @@ services:
     environment:
       - SUPERLINK_IP=${SUPERLINK_IP}
       - SUPERLINK_PORT=${SUPERLINK_PORT}
-      - DATASET_PATH=/app/dataset/${DATASET_NAME}/${NUM_PARTITIONS}_partitions/${DATASET_NAME}_part_${CLIENT_N}
+      - DATASET_PATH=/app/dataset/${DATASET_NAME}/#_partitions/${DATASET_NAME}_part_${CLIENT_N}
       - FLASK_RUN_PORT=6001
       - container_name=client${CLIENT_N}
       - DOCKER_HOST_IP=host.docker.internal

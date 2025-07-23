@@ -58,7 +58,8 @@ def client_fn(context: Context):
 
     # Read client-specific configuration
     dataset_path = context.node_config["dataset-path"]
-    num_partitions = context.node_config["num-partitions"]
+    num_partitions = context.run_config["num-partitions"]
+    dataset_path.replace("#", f"{num_partitions}")
     # Read run-specific hyperparameters
     batch_size = context.run_config["batch-size"]
     local_epochs = context.run_config["local-epochs"]
