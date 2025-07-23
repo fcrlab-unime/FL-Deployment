@@ -33,7 +33,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Create mount points for the dataset and model volumes
-RUN mkdir -p /app/data /app/model
+RUN mkdir -p /app/dataset /app/models
 
 # Copy and set permissions for the entrypoint script
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
