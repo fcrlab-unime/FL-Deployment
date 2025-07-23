@@ -40,6 +40,7 @@ services:
       - FLASK_RUN_PORT=6001
       - container_name=client${CLIENT_N}
       - DOCKER_HOST_IP=host.docker.internal
+      - CLIENT_N=${CLIENT_N}
     stop_signal: SIGINT
     depends_on:
       - cadvisor
