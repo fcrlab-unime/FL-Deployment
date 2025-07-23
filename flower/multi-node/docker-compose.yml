@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.47.0
+    container_name: cadvisor
+    privileged: true
+    deploy:
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: client${CLIENT_N}
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command: []
+    ports:
+      - "9092:9092"
+      - "9094:9094" 
+      - "6001:6001"  
+    volumes:
+      - ./dataset:/app/dataset
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./model:/app/model
+    environment:
+      - SUPERLINK_IP=172.17.4.207
+      - SUPERLINK_PORT=9092
+      - DATASET_PATH=/app/dataset/fashionmnist_part_${CLIENT_N}
+      - FLASK_RUN_PORT=6001
+      - container_name=client${CLIENT_N}
+      - DOCKER_HOST_IP=host.docker.internal
+    stop_signal: SIGINT
+    depends_on:
+      - cadvisor
+
+volumes:
+  grafana-storage:
