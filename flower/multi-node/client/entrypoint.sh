@@ -15,7 +15,7 @@ COMMAND=(
     "flower-supernode"
     "--insecure"
     "--superlink=${SUPERLINK_IP}:${SUPERLINK_PORT}"
-    "--node-config=dataset-path='${DATASET_PATH}'"
+    "--node-config=client-n=${CLIENT_N}"  # This can be adjusted based on your client number
 )
 
 # If there are additional arguments passed to `docker run` or `docker-compose`,
