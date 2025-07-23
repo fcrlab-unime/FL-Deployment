@@ -61,10 +61,11 @@ def client_fn(context: Context):
 
     # Read client-specific configuration
     num_partitions = context.run_config["num-partitions"]
-    logging.info(f"Number of partitions: {num_partitions}")
-    logging.info(context.run_config["dataset-name"])
-    dataset_path = f"/app/dataset/{context.run_config["dataset-name"]}/{context.run_config["num-partitions"]}_partitions/{context.run_config["dataset-name"]}_part_{context.node_config["client-n"]}"
-    logging.info(f"Using dataset path: {dataset_path}")
+    dataset_name = context.run_config["dataset-name"]
+    client_n = context.node_config["client-n"]
+    
+    dataset_path = f"/app/dataset/{dataset_name}/{num_partitions}_partitions/{dataset_name}_part_{client_n}"
+    logging.info(dataset_path)
 
     # Read run-specific hyperparameters
     batch_size = context.run_config["batch-size"]
