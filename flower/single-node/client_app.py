@@ -48,16 +48,27 @@ class FlowerClient(NumPyClient):
 def client_fn(context: Context):
     """Construct a Client that will be run in a ClientApp."""
 
+    # --- Start of new/modified code ---
+
+    # Get the seed from the server's run config for reproducibility
+    # Use a default seed if not provided
+    seed = context.run_config.get("seed", 42)
+    logging.info(f"Using seed: {seed}")
+
     # Get model and dataset name from the server's run config
     model_name = context.run_config["model"] # e.g., "cnn", "dnn", "resnet18"
     
     # Dynamically import the model class from the correct file
     try:
         module = importlib.import_module(f"models.{model_name}")
-        # Assumes the class name is the uppercase version of the file name
         Net = getattr(module, model_name.upper()) 
     except (ImportError, AttributeError) as e:
         raise ValueError(f"Could not load model '{model_name.upper()}' from 'models/{model_name}.py'") from e
+
+    # Set the seed for the entire client using the static method
+    Net.set_seed(seed)
+    
+    # --- End of new/modified code ---
 
     # Read client-specific configuration
     num_partitions = context.run_config["num-partitions"]
@@ -73,14 +84,14 @@ def client_fn(context: Context):
     learning_rate = context.run_config["learning-rate"]
     
     # Load the data using the static method from the imported model class
+    # Seeding is done, so this will now be reproducible
     trainloader, valloader = Net.load_data(dataset_path, batch_size)
 
-    # Instantiate the model
+    # Instantiate the model. Weight initialization will be reproducible.
     net = Net()
 
     # Return a FlowerClient instance
     return FlowerClient(net, trainloader, valloader, local_epochs, learning_rate).to_client()
-
 
 # Flower ClientApp
 app = ClientApp(client_fn)
