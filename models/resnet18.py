@@ -1,5 +1,3 @@
-# For use with the CIFAR-10 dataset.
-
 import torch
 import torch.nn as nn
 from collections import OrderedDict
@@ -9,6 +7,10 @@ from torchvision.models import resnet18
 from datasets import load_from_disk
 import logging
 
+# Imports for reproducibility
+import random
+import numpy as np
+
 logging.basicConfig(level=logging.INFO)
 
 class RESNET18(nn.Module):
@@ -16,10 +18,8 @@ class RESNET18(nn.Module):
 
     def __init__(self):
         super(RESNET18, self).__init__()
-        # Instantiate the ResNet-18 model from torchvision
-        self.model = resnet18(weights=None) # From scratch
+        self.model = resnet18(weights=None)
         
-        # Adapt the final fully connected layer for 10 classes (CIFAR-10)
         num_ftrs = self.model.fc.in_features
         self.model.fc = nn.Linear(num_ftrs, 10)
 
@@ -38,16 +38,28 @@ class RESNET18(nn.Module):
         self.load_state_dict(state_dict, strict=True)
 
     @staticmethod
+    def set_seed(seed: int):
+        """Set all seeds to make results reproducible."""
+        random.seed(seed)
+        np.random.seed(seed)
+        torch.manual_seed(seed)
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed(seed)
+            torch.cuda.manual_seed_all(seed)
+        # When running on the CuDNN backend, two further options must be set
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+        logging.info(f"Seeds set to {seed} for reproducibility.")
+
+    @staticmethod
     def load_data(path: str, batch_size: int):
         """Load CIFAR-10 from disk and create DataLoaders."""
         partition_train_test = load_from_disk(path)
-        # Transforms for color 32x32 images
         pytorch_transforms = Compose(
             [ToTensor(), Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]
         )
 
         def apply_transforms(batch):
-            # The key for CIFAR-10 in Hugging Face is 'img', not 'image'
             batch["img"] = [pytorch_transforms(img) for img in batch["img"]]
             return batch
 
@@ -62,14 +74,10 @@ class RESNET18(nn.Module):
         """Train the model on the training set for a number of epochs."""
         self.to(device)
         criterion = torch.nn.CrossEntropyLoss().to(device)
-        # Using Adam optimizer as in the original script
         optimizer = torch.optim.Adam(self.parameters(), lr=learning_rate)
         self.train()
         for _ in range(epochs):
-            logging.info(f"Training epoch {_ + 1}/{epochs}")
-            for idx, batch in enumerate(trainloader):
-                # Use 'img' key for CIFAR-10
-                logging.info(f"Processing batch {idx + 1}/{len(trainloader)}")
+            for batch in trainloader:
                 images = batch["img"].to(device)
                 labels = batch["label"].to(device)
                 optimizer.zero_grad()
@@ -85,7 +93,6 @@ class RESNET18(nn.Module):
         self.eval()
         with torch.no_grad():
             for batch in testloader:
-                # Use 'img' key for CIFAR-10
                 images = batch["img"].to(device)
                 labels = batch["label"].to(device)
                 outputs = self(images)

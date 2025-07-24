@@ -5,8 +5,12 @@ from collections import OrderedDict
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, ToTensor, Normalize
 from datasets import load_from_disk
-
 import logging
+
+# Imports for reproducibility
+import random
+import numpy as np
+
 logging.basicConfig(level=logging.INFO)
 
 class CNN(nn.Module):
@@ -40,11 +44,22 @@ class CNN(nn.Module):
         self.load_state_dict(state_dict, strict=True)
 
     @staticmethod
+    def set_seed(seed: int):
+        """Set all seeds to make results reproducible."""
+        random.seed(seed)
+        np.random.seed(seed)
+        torch.manual_seed(seed)
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed(seed)
+            torch.cuda.manual_seed_all(seed)
+        # When running on the CuDNN backend, two further options must be set
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+        logging.info(f"Seeds set to {seed} for reproducibility.")
+
+    @staticmethod
     def load_data(path: str, batch_size: int):
-        """Load a dataset from disk and create dataloaders.
-        
-        This is a static method as it doesn't depend on a model instance.
-        """
+        """Load a dataset from disk and create dataloaders."""
         partition_train_test = load_from_disk(path)
         pytorch_transforms = Compose([ToTensor(), Normalize((0.5,), (0.5,))])
 
@@ -66,10 +81,7 @@ class CNN(nn.Module):
         optimizer = torch.optim.SGD(self.parameters(), lr=learning_rate, momentum=0.9)
         self.train()
         for _ in range(epochs):
-            logging.info(f"Training epoch {_ + 1}/{epochs}")
-            for idx, batch in enumerate(trainloader):
-                # Use 'img' key for CIFAR-10
-                logging.info(f"Processing batch {idx + 1}/{len(trainloader)}")
+            for batch in trainloader:
                 images = batch["image"].to(device)
                 labels = batch["label"].to(device)
                 optimizer.zero_grad()
@@ -92,7 +104,6 @@ class CNN(nn.Module):
                 total += labels.size(0)
                 correct += (torch.max(outputs.data, 1)[1] == labels).sum().item()
         
-        # Return loss and accuracy
         accuracy = correct / total
         avg_loss = loss / len(testloader)
         return avg_loss, accuracy
