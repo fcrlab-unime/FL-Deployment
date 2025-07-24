@@ -25,7 +25,7 @@ services:
     volumes:
       # - ./dataset:/app/dataset
       - ./pyproject.toml:/app/pyproject.toml
-      - ../../../models:/app/models
+      - ../../models:/app/models
     deploy:
       restart_policy:
         condition: on-failure

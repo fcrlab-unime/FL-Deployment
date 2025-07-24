@@ -41,7 +41,7 @@ for ((i=1; i<=NUM_PARTITIONS; i++)); do
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ../../datasets/${DATASET_NAME}/${NUM_PARTITIONS}_partitions/${DATASET_NAME}_part_${i}:/app/dataset/${DATASET_NAME}/${NUM_PARTITIONS}_partitions/${DATASET_NAME}_part_${i}
-      - ../../../models:/app/models
+      - ../../models:/app/models
     environment:
       - SUPERLINK_IP=${SUPERLINK_IP}
       - SUPERLINK_PORT=${SUPERLINK_PORT}
