@@ -78,7 +78,7 @@ class CNN(nn.Module):
         """Train the model on the training set for a number of epochs."""
         self.to(device)
         criterion = torch.nn.CrossEntropyLoss().to(device)
-        optimizer = torch.optim.SGD(self.parameters(), lr=learning_rate, momentum=0.9)
+        optimizer = torch.optim.Adam(self.parameters(), lr=learning_rate)
         self.train()
         for _ in range(epochs):
             for batch in trainloader:
