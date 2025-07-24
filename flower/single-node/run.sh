@@ -1,0 +1,1 @@
+exec docker exec aggregator /bin/bash -c "flwr run . embedded-federation"

@@ -1,0 +1,80 @@
+services:
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.47.0
+    container_name: cadvisor
+    privileged: true
+    deploy:
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  aggregator:
+    build: 
+      context: .
+      dockerfile: Dockerfile.server
+    container_name: aggregator
+    volumes:
+      # - ./dataset:/app/dataset
+      - ./pyproject.toml:/app/pyproject.toml
+      - ../../../models:/app/models
+    deploy:
+      restart_policy:
+        condition: on-failure
+    # networks:
+    #   - default
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9095:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - aggregator
+    # networks:
+    #   - default
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "9094:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./config/grafana.ini:/etc/grafana/grafana.ini
+      - ./config/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ./config/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - prometheus
+    # networks:
+    #   - default
+
+# networks:
+#   default:
+#     driver: bridge
+#     ipam:
+#       config:
+#         - subnet: 172.25.0.0/16
+
+volumes:
+  grafana-storage:
+  model-storage:
+  dataset-storage:

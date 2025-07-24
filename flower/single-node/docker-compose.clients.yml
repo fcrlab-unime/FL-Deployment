@@ -1,0 +1,48 @@
+
+services:
+
+  client1:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    container_name: client1
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command: []
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../../datasets/mnist/2_partitions/mnist_part_1:/app/dataset/mnist/2_partitions/mnist_part_1
+      - ../../../models:/app/models
+    environment:
+      - SUPERLINK_IP=aggregator
+      - SUPERLINK_PORT=9092
+      - container_name=client1
+      - DOCKER_HOST_IP=host.docker.internal
+      - CLIENT_N=1
+    stop_signal: SIGINT
+    depends_on:
+      - cadvisor
+
+  client2:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    container_name: client2
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command: []
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../../datasets/mnist/2_partitions/mnist_part_2:/app/dataset/mnist/2_partitions/mnist_part_2
+      - ../../../models:/app/models
+    environment:
+      - SUPERLINK_IP=aggregator
+      - SUPERLINK_PORT=9092
+      - container_name=client2
+      - DOCKER_HOST_IP=host.docker.internal
+      - CLIENT_N=2
+    stop_signal: SIGINT
+    depends_on:
+      - cadvisor

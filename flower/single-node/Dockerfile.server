@@ -1,0 +1,30 @@
+# Dockerfile
+
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the requirements file into the container at /app
+COPY requirements.txt .
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Create mount points for the dataset and model volumes
+RUN mkdir -p /data /model
+
+COPY server_app.py /app/server_app.py
+COPY client_app.py /app/client_app.py
+COPY pyproject.toml /app/pyproject.toml
+
+COPY server_entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Expose the port for the Flower SuperLink (8080) and Prometheus (8000)
+EXPOSE 8080
+EXPOSE 8001
+
+# Run entrypoint.sh when the container launches
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
