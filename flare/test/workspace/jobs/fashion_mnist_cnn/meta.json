@@ -1,0 +1,13 @@
+{
+  "name": "fashion_mnist_cnn",
+  "version": "1.0",
+  "resource_spec": {
+    "clients": {},
+    "servers": ["server1"]
+  },
+  "deploy_map": {
+      "fashion_mnist_cnn": [
+          "@ALL"
+      ]
+  }
+}

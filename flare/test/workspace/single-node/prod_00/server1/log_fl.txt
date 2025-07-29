@@ -1,0 +1,107 @@
+2025-07-28 06:50:38,136 - ClientManager - ERROR - no client for transfer: I have dict_keys(['site-1', 'site-2']) dict_keys(['11596df7-97fd-4a4b-b30b-c7dfc3e74211', '056fc250-ece5-4186-b863-91bbdc776179'])
+2025-07-28 07:22:20,780 - JsonConfigLoader - ERROR - Error loading config {
+  "name": "fashion_mnist_cnn",
+  "version": "1.0",
+  "resource_spec": {
+    "clients": ["site-1", "site-2"],
+    "servers": ["server1"]
+  },
+  "deploy_map": {
+      "fashion_mnist_cnn": [
+          "@ALL"
+      ]
+    
+  },
+  "min_clients": 2,
+}
+: JSONDecodeError: Expecting property name enclosed in double quotes: line 15 column 1 (char 245)
+2025-07-28 07:34:18,361 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 8b03949c-3bfc-402c-9231-2620b53750f5, get result: (scheduled).
+2025-07-28 07:37:29,932 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 444b1750-1979-4855-89aa-ed74795de6d9, get result: (scheduled).
+2025-07-28 07:38:26,140 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job d7fb16a2-c6ab-456e-9584-838a5add098a, get result: (scheduled).
+2025-07-28 07:38:33,105 - ServerEngine - WARNING - notified SJ of dead-job: job_id='d7fb16a2-c6ab-456e-9584-838a5add098a'; client_name='site-2'; reason='missing job on client'
+2025-07-28 07:38:33,107 - ServerEngine - WARNING - notified SJ of dead-job: job_id='d7fb16a2-c6ab-456e-9584-838a5add098a'; client_name='site-1'; reason='missing job on client'
+2025-07-28 07:43:32,987 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 9e4de48e-09b7-46d6-83c5-3247bf198678, get result: (scheduled).
+2025-07-28 07:45:33,398 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job f85f8732-30f7-4ecf-9020-50503410ab6f, get result: (scheduled).
+2025-07-28 07:45:47,803 - CoreCell - WARNING - server: no waiter for req 3b3d1efa-0675-4d29-b68c-7d0e244766c0 - the reply is too late
+2025-07-28 07:45:47,804 - CoreCell - WARNING - server: no waiter for req 3b3d1efa-0675-4d29-b68c-7d0e244766c0 - the reply is too late
+2025-07-28 07:47:43,913 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job ddb867fe-9c36-44e0-812a-12bab69ba0bc, get result: (scheduled).
+2025-07-28 07:47:58,158 - CoreCell - WARNING - server: no waiter for req e456221c-ae11-49d3-8dc6-6ee135dc0ee2 - the reply is too late
+2025-07-28 07:47:58,274 - CoreCell - WARNING - server: no waiter for req e456221c-ae11-49d3-8dc6-6ee135dc0ee2 - the reply is too late
+2025-07-28 07:48:16,084 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 4c389997-b285-4f52-9d94-5d8bcb7170e9, get result: (scheduled).
+2025-07-28 07:48:30,387 - CoreCell - WARNING - server: no waiter for req 64ce40ad-1f50-49b4-af44-c9531dedf7db - the reply is too late
+2025-07-28 07:48:30,387 - CoreCell - WARNING - server: no waiter for req 64ce40ad-1f50-49b4-af44-c9531dedf7db - the reply is too late
+2025-07-28 07:48:43,220 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 7a1da8e3-6cee-4859-aed2-50349a68a9ec, get result: (scheduled).
+2025-07-28 07:48:59,504 - CoreCell - WARNING - server: no waiter for req c6772aa0-3daf-4cdc-bb2d-778142f52481 - the reply is too late
+2025-07-28 07:48:59,519 - CoreCell - WARNING - server: no waiter for req c6772aa0-3daf-4cdc-bb2d-778142f52481 - the reply is too late
+2025-07-28 07:50:50,653 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 4d3831c6-9600-45f6-9679-4db1f1a0ae49, get result: (scheduled).
+2025-07-28 07:51:25,864 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 77be770a-32c3-4552-a619-308eb4ee5a8d, get result: (scheduled).
+2025-07-28 08:28:37,996 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 0785d7b4-1fc4-4e02-8aeb-3d13c76394be, get result: (scheduled).
+2025-07-28 08:29:27,284 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 50973e70-0470-47c1-a007-f2411fe369a2, get result: (scheduled).
+2025-07-28 08:29:59,487 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 6dabaaa6-ce32-402a-aa5e-4b6e156c241d, get result: (scheduled).
+2025-07-28 08:30:06,127 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:06,580 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:16,150 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:16,612 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:26,175 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:26,640 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:36,203 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:36,666 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:46,225 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:46,695 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:56,254 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:56,725 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:06,275 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:06,747 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:12,775 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 968f1fcb-f064-4ad0-8091-edd303cd984c, get result: (scheduled).
+2025-07-28 08:31:16,302 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:16,776 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:26,335 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:26,802 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:36,363 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:36,831 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:46,392 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:46,858 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:56,417 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:56,893 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:32:31,088 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 0ad82cb0-c544-4022-8ee8-268e43fdb65d, get result: (scheduled).
+2025-07-28 08:32:43,535 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:32:43,541 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:32:53,558 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:32:53,566 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:03,589 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:03,594 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:13,615 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:13,620 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:23,650 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:23,654 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:33,680 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:33,683 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:43,711 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:43,714 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:24,476 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0, get result: (scheduled).
+2025-07-28 08:34:33,825 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:34:33,829 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:43,860 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:43,864 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:34:53,897 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:53,900 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:03,931 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:03,936 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:13,960 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:13,964 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:23,988 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:23,994 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:34,020 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:34,025 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:37:40,157 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 6191742e-4a1b-475c-8dc3-96e57d7f7e73, get result: (scheduled).
+2025-07-28 08:37:55,191 - CoreCell - WARNING - server: no waiter for req 1bfa3e75-df4a-4412-8918-74c02c66ecac - the reply is too late
+2025-07-28 08:37:55,193 - CoreCell - WARNING - server: no waiter for req 1bfa3e75-df4a-4412-8918-74c02c66ecac - the reply is too late
+2025-07-28 08:40:34,969 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job f23f566c-2e77-4826-bebd-08b97b85cfc6, get result: (scheduled).
+2025-07-28 08:40:50,891 - CoreCell - WARNING - server: no waiter for req 6d217b1d-31af-49c6-aae3-220f4b1159e5 - the reply is too late
+2025-07-28 08:40:50,893 - CoreCell - WARNING - server: no waiter for req 6d217b1d-31af-49c6-aae3-220f4b1159e5 - the reply is too late
+2025-07-28 08:41:05,242 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 50f963d0-9cff-4b28-b12d-12a26160676a, get result: (scheduled).
+2025-07-28 08:44:46,830 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 2ce0a45d-598c-40b4-a72d-09e5d340ad1e, get result: (scheduled).
+2025-07-29 07:24:57,442 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 129919e0-1353-4a08-9e27-1f6523565191, get result: (scheduled).
+2025-07-29 07:35:55,692 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job eaf7e6db-fb97-444e-b44d-be2adc4a0dd4, get result: (scheduled).
+2025-07-29 07:36:11,729 - CoreCell - WARNING - server: no waiter for req d9ab8add-830f-4b0f-a983-679a5413a939 - the reply is too late
+2025-07-29 07:36:11,752 - CoreCell - WARNING - server: no waiter for req d9ab8add-830f-4b0f-a983-679a5413a939 - the reply is too late

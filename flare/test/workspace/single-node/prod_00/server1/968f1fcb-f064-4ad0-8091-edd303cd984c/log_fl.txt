@@ -1,0 +1,34 @@
+2025-07-28 08:31:14,269 - ScatterAndGather - INFO - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - Initializing ScatterAndGather workflow.
+2025-07-28 08:31:14,270 - PTFileModelPersistor - INFO - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - Both source_ckpt_file_full_name and ckpt_preload_path are not provided. Using the default model weights initialized on the persistor side.
+2025-07-28 08:31:14,270 - ScatterAndGather - INFO - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - Beginning ScatterAndGather training phase.
+2025-07-28 08:31:14,271 - ScatterAndGather - INFO - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - Round 0 started.
+2025-07-28 08:31:16,306 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:16,308 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-2
+2025-07-28 08:31:16,309 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - client site-2 is placed on dead client watch list
+2025-07-28 08:31:16,778 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:16,780 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-1
+2025-07-28 08:31:16,782 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - client site-1 is placed on dead client watch list
+2025-07-28 08:31:26,336 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:26,338 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-2
+2025-07-28 08:31:26,339 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-2': already on watch list
+2025-07-28 08:31:26,804 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:26,805 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-1
+2025-07-28 08:31:26,806 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-1': already on watch list
+2025-07-28 08:31:36,365 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:36,367 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-2
+2025-07-28 08:31:36,369 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-2': already on watch list
+2025-07-28 08:31:36,833 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:36,835 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-1
+2025-07-28 08:31:36,836 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-1': already on watch list
+2025-07-28 08:31:46,395 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:46,396 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-2
+2025-07-28 08:31:46,398 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-2': already on watch list
+2025-07-28 08:31:46,862 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:46,863 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-1
+2025-07-28 08:31:46,864 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-1': already on watch list
+2025-07-28 08:31:56,419 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:56,421 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-2
+2025-07-28 08:31:56,422 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-2': already on watch list
+2025-07-28 08:31:56,895 - HandleDeadJobCommand - WARNING - received dead job notification: reason='missing job on client'
+2025-07-28 08:31:56,896 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - received dead job report for client site-1
+2025-07-28 08:31:56,897 - WFCommServer - WARNING - [identity=single-node, run=968f1fcb-f064-4ad0-8091-edd303cd984c, wf=scatter_and_gather] - discarded dead client report client_name='site-1': already on watch list

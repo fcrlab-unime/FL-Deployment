@@ -1,0 +1,17 @@
+2025-07-28 06:50:38,136 - ClientManager - ERROR - no client for transfer: I have dict_keys(['site-1', 'site-2']) dict_keys(['11596df7-97fd-4a4b-b30b-c7dfc3e74211', '056fc250-ece5-4186-b863-91bbdc776179'])
+2025-07-28 07:22:20,780 - JsonConfigLoader - ERROR - Error loading config {
+  "name": "fashion_mnist_cnn",
+  "version": "1.0",
+  "resource_spec": {
+    "clients": ["site-1", "site-2"],
+    "servers": ["server1"]
+  },
+  "deploy_map": {
+      "fashion_mnist_cnn": [
+          "@ALL"
+      ]
+    
+  },
+  "min_clients": 2,
+}
+: JSONDecodeError: Expecting property name enclosed in double quotes: line 15 column 1 (char 245)

@@ -1,0 +1,601 @@
+2025-07-28 06:38:29,718 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-28 06:38:29,792 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-28 06:38:29,899 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-28 06:38:29,900 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:23634] is starting
+2025-07-28 06:38:30,401 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:23634
+2025-07-28 06:38:30,409 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-28 06:38:30,415 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 06:38:30,417 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-28 06:38:30,418 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 06:38:30,419 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 06:38:30,420 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 06:38:30,420 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-28 06:38:30,420 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-28 06:38:30,421 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-28 06:38:30,425 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-28 06:38:30,425 - root - INFO - Server started
+2025-07-28 06:38:30,922 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-28 06:38:31,374 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.18.0.4:37994 SSL site-1] is created: PID: 1
+2025-07-28 06:38:31,375 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.18.0.2:46986 SSL site-2] is created: PID: 1
+2025-07-28 06:38:32,815 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-28 06:38:32,816 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-28 06:38:32,816 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-28 06:38:32,816 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-28 06:38:32,816 - ClientManager - INFO - Client: New client site-1@172.18.0.4 joined. Sent token: 11596df7-97fd-4a4b-b30b-c7dfc3e74211.  Total clients: 1
+2025-07-28 06:38:32,817 - ClientManager - INFO - Client: New client site-2@172.18.0.2 joined. Sent token: 056fc250-ece5-4186-b863-91bbdc776179.  Total clients: 2
+2025-07-28 06:50:38,136 - ClientManager - ERROR - no client for transfer: I have dict_keys(['site-1', 'site-2']) dict_keys(['11596df7-97fd-4a4b-b30b-c7dfc3e74211', '056fc250-ece5-4186-b863-91bbdc776179'])
+2025-07-28 07:03:11,874 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-28 07:03:11,926 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-28 07:03:12,002 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-28 07:03:12,002 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:46225] is starting
+2025-07-28 07:03:12,504 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:46225
+2025-07-28 07:03:12,518 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-28 07:03:12,532 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 07:03:12,534 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-28 07:03:12,535 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 07:03:12,536 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-28 07:03:12,537 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 07:03:12,538 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 07:03:12,540 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-28 07:03:12,540 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-28 07:03:12,544 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.18.0.2:57248 SSL site-1] is created: PID: 1
+2025-07-28 07:03:12,545 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.18.0.3:36670 SSL site-2] is created: PID: 1
+2025-07-28 07:03:12,548 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-28 07:03:12,548 - root - INFO - Server started
+2025-07-28 07:03:13,040 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-28 07:03:14,979 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-28 07:03:14,979 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-28 07:03:14,979 - ClientManager - INFO - Client: New client site-1@172.18.0.2 joined. Sent token: 44b08ca2-ce30-445f-9098-d7fdcb6ed248.  Total clients: 1
+2025-07-28 07:03:14,989 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-28 07:03:14,990 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-28 07:03:14,990 - ClientManager - INFO - Client: New client site-2@172.18.0.3 joined. Sent token: f6ea2013-ab3b-4d59-8ce5-580ca8027a68.  Total clients: 2
+2025-07-28 07:22:20,780 - JsonConfigLoader - ERROR - Error loading config {
+  "name": "fashion_mnist_cnn",
+  "version": "1.0",
+  "resource_spec": {
+    "clients": ["site-1", "site-2"],
+    "servers": ["server1"]
+  },
+  "deploy_map": {
+      "fashion_mnist_cnn": [
+          "@ALL"
+      ]
+    
+  },
+  "min_clients": 2,
+}
+: JSONDecodeError: Expecting property name enclosed in double quotes: line 15 column 1 (char 245)
+2025-07-28 07:34:18,361 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 8b03949c-3bfc-402c-9231-2620b53750f5, get result: (scheduled).
+2025-07-28 07:34:18,365 - JobRunner - INFO - [identity=server, run=?] - Got the job: 8b03949c-3bfc-402c-9231-2620b53750f5 from the scheduler to run
+2025-07-28 07:34:18,387 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 8b03949c-3bfc-402c-9231-2620b53750f5
+2025-07-28 07:34:18,387 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 8b03949c-3bfc-402c-9231-2620b53750f5
+2025-07-28 07:34:18,409 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 8b03949c-3bfc-402c-9231-2620b53750f5
+2025-07-28 07:34:18,417 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 87
+2025-07-28 07:34:18,418 - ServerEngine - INFO - Launch job_id: 8b03949c-3bfc-402c-9231-2620b53750f5  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:34:18,432 - JobRunner - INFO - [identity=server, run=?] - Started run: 8b03949c-3bfc-402c-9231-2620b53750f5 for clients: site-1,site-2
+2025-07-28 07:34:18,434 - JobRunner - INFO - [identity=server, run=?] - Job: 8b03949c-3bfc-402c-9231-2620b53750f5 started to run, status changed to RUNNING.
+2025-07-28 07:34:18,845 - conn_manager - INFO - Connection [CN00004 127.0.0.1:46225 <= 127.0.0.1:42282] is created: PID: 1
+2025-07-28 07:34:20,376 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-28 07:34:22,481 - ServerEngine - INFO - Job: 8b03949c-3bfc-402c-9231-2620b53750f5 child process exit with return code 1
+2025-07-28 07:34:22,704 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (8b03949c-3bfc-402c-9231-2620b53750f5) on clients ...
+2025-07-28 07:37:29,932 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 444b1750-1979-4855-89aa-ed74795de6d9, get result: (scheduled).
+2025-07-28 07:37:29,934 - JobRunner - INFO - [identity=server, run=?] - Got the job: 444b1750-1979-4855-89aa-ed74795de6d9 from the scheduler to run
+2025-07-28 07:37:29,954 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 444b1750-1979-4855-89aa-ed74795de6d9
+2025-07-28 07:37:29,954 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 444b1750-1979-4855-89aa-ed74795de6d9
+2025-07-28 07:37:29,971 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 444b1750-1979-4855-89aa-ed74795de6d9
+2025-07-28 07:37:32,983 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 142
+2025-07-28 07:37:32,984 - ServerEngine - INFO - Launch job_id: 444b1750-1979-4855-89aa-ed74795de6d9  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:37:32,999 - JobRunner - INFO - [identity=server, run=?] - Started run: 444b1750-1979-4855-89aa-ed74795de6d9 for clients: site-1,site-2
+2025-07-28 07:37:33,002 - JobRunner - INFO - [identity=server, run=?] - Job: 444b1750-1979-4855-89aa-ed74795de6d9 started to run, status changed to RUNNING.
+2025-07-28 07:37:33,400 - conn_manager - INFO - Connection [CN00005 127.0.0.1:46225 <= 127.0.0.1:50502] is created: PID: 1
+2025-07-28 07:37:34,929 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-28 07:37:37,050 - ServerEngine - INFO - Job: 444b1750-1979-4855-89aa-ed74795de6d9 child process exit with return code 1
+2025-07-28 07:37:37,994 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (444b1750-1979-4855-89aa-ed74795de6d9) on clients ...
+2025-07-28 07:38:26,140 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job d7fb16a2-c6ab-456e-9584-838a5add098a, get result: (scheduled).
+2025-07-28 07:38:26,143 - JobRunner - INFO - [identity=server, run=?] - Got the job: d7fb16a2-c6ab-456e-9584-838a5add098a from the scheduler to run
+2025-07-28 07:38:26,160 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: d7fb16a2-c6ab-456e-9584-838a5add098a
+2025-07-28 07:38:26,160 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: d7fb16a2-c6ab-456e-9584-838a5add098a
+2025-07-28 07:38:26,174 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: d7fb16a2-c6ab-456e-9584-838a5add098a
+2025-07-28 07:38:29,192 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 198
+2025-07-28 07:38:29,193 - ServerEngine - INFO - Launch job_id: d7fb16a2-c6ab-456e-9584-838a5add098a  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:38:29,210 - JobRunner - INFO - [identity=server, run=?] - Started run: d7fb16a2-c6ab-456e-9584-838a5add098a for clients: site-1,site-2
+2025-07-28 07:38:29,213 - JobRunner - INFO - [identity=server, run=?] - Job: d7fb16a2-c6ab-456e-9584-838a5add098a started to run, status changed to RUNNING.
+2025-07-28 07:38:29,595 - conn_manager - INFO - Connection [CN00006 127.0.0.1:46225 <= 127.0.0.1:40710] is created: PID: 1
+2025-07-28 07:38:31,618 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-28 07:38:33,105 - ServerEngine - WARNING - notified SJ of dead-job: job_id='d7fb16a2-c6ab-456e-9584-838a5add098a'; client_name='site-2'; reason='missing job on client'
+2025-07-28 07:38:33,107 - ServerEngine - WARNING - notified SJ of dead-job: job_id='d7fb16a2-c6ab-456e-9584-838a5add098a'; client_name='site-1'; reason='missing job on client'
+2025-07-28 07:38:33,883 - ServerEngine - INFO - Job: d7fb16a2-c6ab-456e-9584-838a5add098a child process exit with return code 1
+2025-07-28 07:38:34,211 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (d7fb16a2-c6ab-456e-9584-838a5add098a) on clients ...
+2025-07-28 07:43:32,987 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 9e4de48e-09b7-46d6-83c5-3247bf198678, get result: (scheduled).
+2025-07-28 07:43:32,991 - JobRunner - INFO - [identity=server, run=?] - Got the job: 9e4de48e-09b7-46d6-83c5-3247bf198678 from the scheduler to run
+2025-07-28 07:43:33,012 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 9e4de48e-09b7-46d6-83c5-3247bf198678
+2025-07-28 07:43:33,012 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 9e4de48e-09b7-46d6-83c5-3247bf198678
+2025-07-28 07:43:33,030 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 9e4de48e-09b7-46d6-83c5-3247bf198678
+2025-07-28 07:43:33,042 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 254
+2025-07-28 07:43:33,047 - ServerEngine - INFO - Launch job_id: 9e4de48e-09b7-46d6-83c5-3247bf198678  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:43:33,066 - JobRunner - INFO - [identity=server, run=?] - Started run: 9e4de48e-09b7-46d6-83c5-3247bf198678 for clients: site-1,site-2
+2025-07-28 07:43:33,069 - JobRunner - INFO - [identity=server, run=?] - Job: 9e4de48e-09b7-46d6-83c5-3247bf198678 started to run, status changed to RUNNING.
+2025-07-28 07:43:33,476 - conn_manager - INFO - Connection [CN00007 127.0.0.1:46225 <= 127.0.0.1:46440] is created: PID: 1
+2025-07-28 07:43:35,007 - conn_manager - INFO - Connection [CN00007 Not Connected] is closed PID: 1
+2025-07-28 07:43:37,126 - ServerEngine - INFO - Job: 9e4de48e-09b7-46d6-83c5-3247bf198678 child process exit with return code 1
+2025-07-28 07:43:37,358 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (9e4de48e-09b7-46d6-83c5-3247bf198678) on clients ...
+2025-07-28 07:45:33,398 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job f85f8732-30f7-4ecf-9020-50503410ab6f, get result: (scheduled).
+2025-07-28 07:45:33,400 - JobRunner - INFO - [identity=server, run=?] - Got the job: f85f8732-30f7-4ecf-9020-50503410ab6f from the scheduler to run
+2025-07-28 07:45:33,419 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: f85f8732-30f7-4ecf-9020-50503410ab6f
+2025-07-28 07:45:33,419 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: f85f8732-30f7-4ecf-9020-50503410ab6f
+2025-07-28 07:45:33,436 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: f85f8732-30f7-4ecf-9020-50503410ab6f
+2025-07-28 07:45:33,442 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 306
+2025-07-28 07:45:33,443 - ServerEngine - INFO - Launch job_id: f85f8732-30f7-4ecf-9020-50503410ab6f  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:45:33,458 - JobRunner - INFO - [identity=server, run=?] - Started run: f85f8732-30f7-4ecf-9020-50503410ab6f for clients: site-1,site-2
+2025-07-28 07:45:33,459 - JobRunner - INFO - [identity=server, run=?] - Job: f85f8732-30f7-4ecf-9020-50503410ab6f started to run, status changed to RUNNING.
+2025-07-28 07:45:33,889 - conn_manager - INFO - Connection [CN00008 127.0.0.1:46225 <= 127.0.0.1:35334] is created: PID: 1
+2025-07-28 07:45:34,579 - conn_manager - INFO - Connection [CN00009 0.0.0.0:8002 <= ipv4:172.18.0.2:51316 SSL site-1] is created: PID: 1
+2025-07-28 07:45:34,579 - conn_manager - INFO - Connection [CN00010 0.0.0.0:8002 <= ipv4:172.18.0.3:52864 SSL site-2] is created: PID: 1
+2025-07-28 07:45:35,445 - conn_manager - INFO - Connection [CN00008 Not Connected] is closed PID: 1
+2025-07-28 07:45:37,543 - ServerEngine - INFO - Job: f85f8732-30f7-4ecf-9020-50503410ab6f child process exit with return code 1
+2025-07-28 07:45:37,776 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (f85f8732-30f7-4ecf-9020-50503410ab6f) on clients ...
+2025-07-28 07:45:47,803 - CoreCell - WARNING - server: no waiter for req 3b3d1efa-0675-4d29-b68c-7d0e244766c0 - the reply is too late
+2025-07-28 07:45:47,804 - CoreCell - WARNING - server: no waiter for req 3b3d1efa-0675-4d29-b68c-7d0e244766c0 - the reply is too late
+2025-07-28 07:45:47,819 - conn_manager - INFO - Connection [CN00010 Not Connected] is closed PID: 1
+2025-07-28 07:45:47,904 - conn_manager - INFO - Connection [CN00009 Not Connected] is closed PID: 1
+2025-07-28 07:47:43,913 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job ddb867fe-9c36-44e0-812a-12bab69ba0bc, get result: (scheduled).
+2025-07-28 07:47:43,917 - JobRunner - INFO - [identity=server, run=?] - Got the job: ddb867fe-9c36-44e0-812a-12bab69ba0bc from the scheduler to run
+2025-07-28 07:47:43,936 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: ddb867fe-9c36-44e0-812a-12bab69ba0bc
+2025-07-28 07:47:43,937 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: ddb867fe-9c36-44e0-812a-12bab69ba0bc
+2025-07-28 07:47:43,964 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: ddb867fe-9c36-44e0-812a-12bab69ba0bc
+2025-07-28 07:47:43,972 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 368
+2025-07-28 07:47:43,973 - ServerEngine - INFO - Launch job_id: ddb867fe-9c36-44e0-812a-12bab69ba0bc  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:47:43,989 - JobRunner - INFO - [identity=server, run=?] - Started run: ddb867fe-9c36-44e0-812a-12bab69ba0bc for clients: site-1,site-2
+2025-07-28 07:47:43,991 - JobRunner - INFO - [identity=server, run=?] - Job: ddb867fe-9c36-44e0-812a-12bab69ba0bc started to run, status changed to RUNNING.
+2025-07-28 07:47:44,409 - conn_manager - INFO - Connection [CN00011 127.0.0.1:46225 <= 127.0.0.1:54174] is created: PID: 1
+2025-07-28 07:47:45,035 - conn_manager - INFO - Connection [CN00012 0.0.0.0:8002 <= ipv4:172.18.0.3:45418 SSL site-2] is created: PID: 1
+2025-07-28 07:47:45,036 - conn_manager - INFO - Connection [CN00013 0.0.0.0:8002 <= ipv4:172.18.0.2:43840 SSL site-1] is created: PID: 1
+2025-07-28 07:47:45,947 - conn_manager - INFO - Connection [CN00011 Not Connected] is closed PID: 1
+2025-07-28 07:47:48,030 - ServerEngine - INFO - Job: ddb867fe-9c36-44e0-812a-12bab69ba0bc child process exit with return code 1
+2025-07-28 07:47:48,211 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (ddb867fe-9c36-44e0-812a-12bab69ba0bc) on clients ...
+2025-07-28 07:47:58,158 - CoreCell - WARNING - server: no waiter for req e456221c-ae11-49d3-8dc6-6ee135dc0ee2 - the reply is too late
+2025-07-28 07:47:58,226 - conn_manager - INFO - Connection [CN00013 Not Connected] is closed PID: 1
+2025-07-28 07:47:58,274 - CoreCell - WARNING - server: no waiter for req e456221c-ae11-49d3-8dc6-6ee135dc0ee2 - the reply is too late
+2025-07-28 07:47:58,375 - conn_manager - INFO - Connection [CN00012 Not Connected] is closed PID: 1
+2025-07-28 07:48:16,084 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 4c389997-b285-4f52-9d94-5d8bcb7170e9, get result: (scheduled).
+2025-07-28 07:48:16,085 - JobRunner - INFO - [identity=server, run=?] - Got the job: 4c389997-b285-4f52-9d94-5d8bcb7170e9 from the scheduler to run
+2025-07-28 07:48:16,104 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 4c389997-b285-4f52-9d94-5d8bcb7170e9
+2025-07-28 07:48:16,104 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 4c389997-b285-4f52-9d94-5d8bcb7170e9
+2025-07-28 07:48:16,122 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 4c389997-b285-4f52-9d94-5d8bcb7170e9
+2025-07-28 07:48:16,128 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 426
+2025-07-28 07:48:16,129 - ServerEngine - INFO - Launch job_id: 4c389997-b285-4f52-9d94-5d8bcb7170e9  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:48:16,140 - JobRunner - INFO - [identity=server, run=?] - Started run: 4c389997-b285-4f52-9d94-5d8bcb7170e9 for clients: site-1,site-2
+2025-07-28 07:48:16,141 - JobRunner - INFO - [identity=server, run=?] - Job: 4c389997-b285-4f52-9d94-5d8bcb7170e9 started to run, status changed to RUNNING.
+2025-07-28 07:48:16,555 - conn_manager - INFO - Connection [CN00014 127.0.0.1:46225 <= 127.0.0.1:38962] is created: PID: 1
+2025-07-28 07:48:17,143 - conn_manager - INFO - Connection [CN00015 0.0.0.0:8002 <= ipv4:172.18.0.2:42156 SSL site-1] is created: PID: 1
+2025-07-28 07:48:17,146 - conn_manager - INFO - Connection [CN00016 0.0.0.0:8002 <= ipv4:172.18.0.3:35206 SSL site-2] is created: PID: 1
+2025-07-28 07:48:18,092 - conn_manager - INFO - Connection [CN00014 Not Connected] is closed PID: 1
+2025-07-28 07:48:20,205 - ServerEngine - INFO - Job: 4c389997-b285-4f52-9d94-5d8bcb7170e9 child process exit with return code 1
+2025-07-28 07:48:20,351 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (4c389997-b285-4f52-9d94-5d8bcb7170e9) on clients ...
+2025-07-28 07:48:30,387 - CoreCell - WARNING - server: no waiter for req 64ce40ad-1f50-49b4-af44-c9531dedf7db - the reply is too late
+2025-07-28 07:48:30,387 - CoreCell - WARNING - server: no waiter for req 64ce40ad-1f50-49b4-af44-c9531dedf7db - the reply is too late
+2025-07-28 07:48:30,470 - conn_manager - INFO - Connection [CN00015 Not Connected] is closed PID: 1
+2025-07-28 07:48:30,478 - conn_manager - INFO - Connection [CN00016 Not Connected] is closed PID: 1
+2025-07-28 07:48:43,220 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 7a1da8e3-6cee-4859-aed2-50349a68a9ec, get result: (scheduled).
+2025-07-28 07:48:43,221 - JobRunner - INFO - [identity=server, run=?] - Got the job: 7a1da8e3-6cee-4859-aed2-50349a68a9ec from the scheduler to run
+2025-07-28 07:48:43,239 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 7a1da8e3-6cee-4859-aed2-50349a68a9ec
+2025-07-28 07:48:43,239 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 7a1da8e3-6cee-4859-aed2-50349a68a9ec
+2025-07-28 07:48:43,254 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 7a1da8e3-6cee-4859-aed2-50349a68a9ec
+2025-07-28 07:48:43,260 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 485
+2025-07-28 07:48:43,261 - ServerEngine - INFO - Launch job_id: 7a1da8e3-6cee-4859-aed2-50349a68a9ec  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:48:43,275 - JobRunner - INFO - [identity=server, run=?] - Started run: 7a1da8e3-6cee-4859-aed2-50349a68a9ec for clients: site-1,site-2
+2025-07-28 07:48:43,277 - JobRunner - INFO - [identity=server, run=?] - Job: 7a1da8e3-6cee-4859-aed2-50349a68a9ec started to run, status changed to RUNNING.
+2025-07-28 07:48:43,696 - conn_manager - INFO - Connection [CN00017 127.0.0.1:46225 <= 127.0.0.1:52652] is created: PID: 1
+2025-07-28 07:48:44,368 - conn_manager - INFO - Connection [CN00018 0.0.0.0:8002 <= ipv4:172.18.0.3:35994 SSL site-2] is created: PID: 1
+2025-07-28 07:48:44,368 - conn_manager - INFO - Connection [CN00019 0.0.0.0:8002 <= ipv4:172.18.0.2:55176 SSL site-1] is created: PID: 1
+2025-07-28 07:48:46,283 - conn_manager - INFO - Connection [CN00017 Not Connected] is closed PID: 1
+2025-07-28 07:48:48,625 - ServerEngine - INFO - Job: 7a1da8e3-6cee-4859-aed2-50349a68a9ec child process exit with return code 1
+2025-07-28 07:48:49,468 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (7a1da8e3-6cee-4859-aed2-50349a68a9ec) on clients ...
+2025-07-28 07:48:59,504 - CoreCell - WARNING - server: no waiter for req c6772aa0-3daf-4cdc-bb2d-778142f52481 - the reply is too late
+2025-07-28 07:48:59,519 - CoreCell - WARNING - server: no waiter for req c6772aa0-3daf-4cdc-bb2d-778142f52481 - the reply is too late
+2025-07-28 07:48:59,604 - conn_manager - INFO - Connection [CN00019 Not Connected] is closed PID: 1
+2025-07-28 07:48:59,605 - conn_manager - INFO - Connection [CN00018 Not Connected] is closed PID: 1
+2025-07-28 07:50:50,653 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 4d3831c6-9600-45f6-9679-4db1f1a0ae49, get result: (scheduled).
+2025-07-28 07:50:50,657 - JobRunner - INFO - [identity=server, run=?] - Got the job: 4d3831c6-9600-45f6-9679-4db1f1a0ae49 from the scheduler to run
+2025-07-28 07:50:50,680 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 4d3831c6-9600-45f6-9679-4db1f1a0ae49
+2025-07-28 07:50:50,680 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 4d3831c6-9600-45f6-9679-4db1f1a0ae49
+2025-07-28 07:50:50,699 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 4d3831c6-9600-45f6-9679-4db1f1a0ae49
+2025-07-28 07:50:50,709 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 546
+2025-07-28 07:50:50,710 - ServerEngine - INFO - Launch job_id: 4d3831c6-9600-45f6-9679-4db1f1a0ae49  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:50:50,727 - JobRunner - INFO - [identity=server, run=?] - Started run: 4d3831c6-9600-45f6-9679-4db1f1a0ae49 for clients: site-1,site-2
+2025-07-28 07:50:50,730 - JobRunner - INFO - [identity=server, run=?] - Job: 4d3831c6-9600-45f6-9679-4db1f1a0ae49 started to run, status changed to RUNNING.
+2025-07-28 07:50:51,140 - conn_manager - INFO - Connection [CN00020 127.0.0.1:46225 <= 127.0.0.1:48720] is created: PID: 1
+2025-07-28 07:50:51,830 - conn_manager - INFO - Connection [CN00021 0.0.0.0:8002 <= ipv4:172.18.0.2:56830 SSL site-1] is created: PID: 1
+2025-07-28 07:50:51,830 - conn_manager - INFO - Connection [CN00022 0.0.0.0:8002 <= ipv4:172.18.0.3:41850 SSL site-2] is created: PID: 1
+2025-07-28 07:50:52,355 - conn_manager - INFO - Connection [CN00023 0.0.0.0:8002 <= ipv4:172.18.0.3:41856 SSL site-2] is created: PID: 1
+2025-07-28 07:50:52,359 - conn_manager - INFO - Connection [CN00024 0.0.0.0:8002 <= ipv4:172.18.0.2:56834 SSL site-1] is created: PID: 1
+2025-07-28 07:50:56,186 - conn_manager - INFO - Connection [CN00020 Not Connected] is closed PID: 1
+2025-07-28 07:50:56,220 - conn_manager - INFO - Connection [CN00023 Not Connected] is closed PID: 1
+2025-07-28 07:50:56,221 - conn_manager - INFO - Connection [CN00024 Not Connected] is closed PID: 1
+2025-07-28 07:50:56,238 - conn_manager - INFO - Connection [CN00021 Not Connected] is closed PID: 1
+2025-07-28 07:50:56,238 - conn_manager - INFO - Connection [CN00022 Not Connected] is closed PID: 1
+2025-07-28 07:50:56,919 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (4d3831c6-9600-45f6-9679-4db1f1a0ae49) on clients ...
+2025-07-28 07:51:25,864 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 77be770a-32c3-4552-a619-308eb4ee5a8d, get result: (scheduled).
+2025-07-28 07:51:25,867 - JobRunner - INFO - [identity=server, run=?] - Got the job: 77be770a-32c3-4552-a619-308eb4ee5a8d from the scheduler to run
+2025-07-28 07:51:25,885 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 77be770a-32c3-4552-a619-308eb4ee5a8d
+2025-07-28 07:51:25,885 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 77be770a-32c3-4552-a619-308eb4ee5a8d
+2025-07-28 07:51:25,904 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 77be770a-32c3-4552-a619-308eb4ee5a8d
+2025-07-28 07:51:25,915 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 618
+2025-07-28 07:51:25,916 - ServerEngine - INFO - Launch job_id: 77be770a-32c3-4552-a619-308eb4ee5a8d  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 07:51:26,300 - conn_manager - INFO - Connection [CN00025 127.0.0.1:46225 <= 127.0.0.1:56052] is created: PID: 1
+2025-07-28 07:51:26,915 - conn_manager - INFO - Connection [CN00026 0.0.0.0:8002 <= ipv4:172.18.0.2:44746 SSL site-1] is created: PID: 1
+2025-07-28 07:51:27,442 - conn_manager - INFO - Connection [CN00027 0.0.0.0:8002 <= ipv4:172.18.0.2:47028 SSL site-1] is created: PID: 1
+2025-07-28 07:51:28,927 - JobRunner - INFO - [identity=server, run=?] - Started run: 77be770a-32c3-4552-a619-308eb4ee5a8d for clients: site-1,site-2
+2025-07-28 07:51:28,929 - JobRunner - INFO - [identity=server, run=?] - Job: 77be770a-32c3-4552-a619-308eb4ee5a8d started to run, status changed to RUNNING.
+2025-07-28 07:51:29,803 - conn_manager - INFO - Connection [CN00028 0.0.0.0:8002 <= ipv4:172.18.0.3:54002 SSL site-2] is created: PID: 1
+2025-07-28 07:51:30,330 - conn_manager - INFO - Connection [CN00029 0.0.0.0:8002 <= ipv4:172.18.0.3:54004 SSL site-2] is created: PID: 1
+2025-07-28 07:51:30,972 - conn_manager - INFO - Connection [CN00027 Not Connected] is closed PID: 1
+2025-07-28 07:51:30,977 - conn_manager - INFO - Connection [CN00026 Not Connected] is closed PID: 1
+2025-07-28 07:51:31,086 - conn_manager - INFO - Connection [CN00029 Not Connected] is closed PID: 1
+2025-07-28 07:51:31,280 - conn_manager - INFO - Connection [CN00025 Not Connected] is closed PID: 1
+2025-07-28 07:51:32,078 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (77be770a-32c3-4552-a619-308eb4ee5a8d) on clients ...
+2025-07-28 07:51:32,094 - conn_manager - INFO - Connection [CN00028 Not Connected] is closed PID: 1
+2025-07-28 08:28:37,996 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 0785d7b4-1fc4-4e02-8aeb-3d13c76394be, get result: (scheduled).
+2025-07-28 08:28:37,999 - JobRunner - INFO - [identity=server, run=?] - Got the job: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be from the scheduler to run
+2025-07-28 08:28:38,032 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be
+2025-07-28 08:28:38,033 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be
+2025-07-28 08:28:38,091 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be
+2025-07-28 08:28:38,102 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 689
+2025-07-28 08:28:38,103 - ServerEngine - INFO - Launch job_id: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:28:38,121 - JobRunner - INFO - [identity=server, run=?] - Started run: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be for clients: site-1,site-2
+2025-07-28 08:28:38,122 - JobRunner - INFO - [identity=server, run=?] - Job: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be started to run, status changed to RUNNING.
+2025-07-28 08:28:38,556 - conn_manager - INFO - Connection [CN00030 127.0.0.1:46225 <= 127.0.0.1:42826] is created: PID: 1
+2025-07-28 08:28:41,083 - conn_manager - INFO - Connection [CN00030 Not Connected] is closed PID: 1
+2025-07-28 08:28:43,394 - ServerEngine - INFO - Job: 0785d7b4-1fc4-4e02-8aeb-3d13c76394be child process exit with return code 1
+2025-07-28 08:28:44,106 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (0785d7b4-1fc4-4e02-8aeb-3d13c76394be) on clients ...
+2025-07-28 08:29:27,284 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 50973e70-0470-47c1-a007-f2411fe369a2, get result: (scheduled).
+2025-07-28 08:29:27,287 - JobRunner - INFO - [identity=server, run=?] - Got the job: 50973e70-0470-47c1-a007-f2411fe369a2 from the scheduler to run
+2025-07-28 08:29:27,316 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 50973e70-0470-47c1-a007-f2411fe369a2
+2025-07-28 08:29:27,317 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 50973e70-0470-47c1-a007-f2411fe369a2
+2025-07-28 08:29:27,346 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 50973e70-0470-47c1-a007-f2411fe369a2
+2025-07-28 08:29:27,354 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 741
+2025-07-28 08:29:27,355 - ServerEngine - INFO - Launch job_id: 50973e70-0470-47c1-a007-f2411fe369a2  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:29:27,368 - JobRunner - INFO - [identity=server, run=?] - Started run: 50973e70-0470-47c1-a007-f2411fe369a2 for clients: site-1,site-2
+2025-07-28 08:29:27,369 - JobRunner - INFO - [identity=server, run=?] - Job: 50973e70-0470-47c1-a007-f2411fe369a2 started to run, status changed to RUNNING.
+2025-07-28 08:29:27,788 - conn_manager - INFO - Connection [CN00031 127.0.0.1:46225 <= 127.0.0.1:36462] is created: PID: 1
+2025-07-28 08:29:30,170 - conn_manager - INFO - Connection [CN00031 Not Connected] is closed PID: 1
+2025-07-28 08:29:32,527 - ServerEngine - INFO - Job: 50973e70-0470-47c1-a007-f2411fe369a2 child process exit with return code 1
+2025-07-28 08:29:33,290 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (50973e70-0470-47c1-a007-f2411fe369a2) on clients ...
+2025-07-28 08:29:59,487 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 6dabaaa6-ce32-402a-aa5e-4b6e156c241d, get result: (scheduled).
+2025-07-28 08:29:59,489 - JobRunner - INFO - [identity=server, run=?] - Got the job: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d from the scheduler to run
+2025-07-28 08:29:59,520 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d
+2025-07-28 08:29:59,520 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d
+2025-07-28 08:29:59,552 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d
+2025-07-28 08:29:59,560 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 793
+2025-07-28 08:29:59,561 - ServerEngine - INFO - Launch job_id: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:30:00,020 - conn_manager - INFO - Connection [CN00032 127.0.0.1:46225 <= 127.0.0.1:33162] is created: PID: 1
+2025-07-28 08:30:02,576 - JobRunner - INFO - [identity=server, run=?] - Started run: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d for clients: site-1,site-2
+2025-07-28 08:30:02,577 - JobRunner - INFO - [identity=server, run=?] - Job: 6dabaaa6-ce32-402a-aa5e-4b6e156c241d started to run, status changed to RUNNING.
+2025-07-28 08:30:06,127 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:06,580 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:16,150 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:16,612 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:26,175 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:26,640 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:36,203 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:36,666 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:46,225 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:46,695 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:30:56,254 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:30:56,725 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:06,275 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:06,747 - ServerEngine - WARNING - notified SJ of dead-job: job_id='6dabaaa6-ce32-402a-aa5e-4b6e156c241d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:08,761 - conn_manager - INFO - Connection [CN00032 Not Connected] is closed PID: 1
+2025-07-28 08:31:09,660 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (6dabaaa6-ce32-402a-aa5e-4b6e156c241d) on clients ...
+2025-07-28 08:31:12,775 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 968f1fcb-f064-4ad0-8091-edd303cd984c, get result: (scheduled).
+2025-07-28 08:31:12,776 - JobRunner - INFO - [identity=server, run=?] - Got the job: 968f1fcb-f064-4ad0-8091-edd303cd984c from the scheduler to run
+2025-07-28 08:31:12,851 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 968f1fcb-f064-4ad0-8091-edd303cd984c
+2025-07-28 08:31:12,852 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 968f1fcb-f064-4ad0-8091-edd303cd984c
+2025-07-28 08:31:12,884 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 968f1fcb-f064-4ad0-8091-edd303cd984c
+2025-07-28 08:31:12,892 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 851
+2025-07-28 08:31:12,893 - ServerEngine - INFO - Launch job_id: 968f1fcb-f064-4ad0-8091-edd303cd984c  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:31:12,911 - JobRunner - INFO - [identity=server, run=?] - Started run: 968f1fcb-f064-4ad0-8091-edd303cd984c for clients: site-1,site-2
+2025-07-28 08:31:12,913 - JobRunner - INFO - [identity=server, run=?] - Job: 968f1fcb-f064-4ad0-8091-edd303cd984c started to run, status changed to RUNNING.
+2025-07-28 08:31:13,346 - conn_manager - INFO - Connection [CN00033 127.0.0.1:46225 <= 127.0.0.1:45296] is created: PID: 1
+2025-07-28 08:31:16,302 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:16,776 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:26,335 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:26,802 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:36,363 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:36,831 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:46,392 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:46,858 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:31:56,417 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:31:56,893 - ServerEngine - WARNING - notified SJ of dead-job: job_id='968f1fcb-f064-4ad0-8091-edd303cd984c'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:32:19,267 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-28 08:32:19,393 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-28 08:32:19,515 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-28 08:32:19,516 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:45458] is starting
+2025-07-28 08:32:20,024 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:45458
+2025-07-28 08:32:20,025 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-28 08:32:20,028 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 08:32:20,033 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-28 08:32:20,034 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 08:32:20,035 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 08:32:20,035 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 08:32:20,036 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-28 08:32:20,036 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-28 08:32:20,036 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-28 08:32:20,040 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-28 08:32:20,040 - root - INFO - Server started
+2025-07-28 08:32:20,125 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.18.0.3:33682 SSL site-2] is created: PID: 1
+2025-07-28 08:32:20,126 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.18.0.4:44524 SSL site-1] is created: PID: 1
+2025-07-28 08:32:20,540 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-28 08:32:20,544 - JobRunner - INFO - Update the previous running job: 968f1fcb-f064-4ad0-8091-edd303cd984c to RunStatus.ABANDONED.
+2025-07-28 08:32:22,476 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-28 08:32:22,476 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-28 08:32:22,477 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-28 08:32:22,477 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-28 08:32:22,477 - ClientManager - INFO - Client: New client site-1@172.18.0.4 joined. Sent token: ecb09b37-418b-4e6b-a2eb-44967ffe9a89.  Total clients: 1
+2025-07-28 08:32:22,478 - ClientManager - INFO - Client: New client site-2@172.18.0.3 joined. Sent token: 82841405-4ba1-4ca7-9a7c-a29a61b9a90a.  Total clients: 2
+2025-07-28 08:32:31,088 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 0ad82cb0-c544-4022-8ee8-268e43fdb65d, get result: (scheduled).
+2025-07-28 08:32:31,089 - JobRunner - INFO - [identity=server, run=?] - Got the job: 0ad82cb0-c544-4022-8ee8-268e43fdb65d from the scheduler to run
+2025-07-28 08:32:31,112 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 0ad82cb0-c544-4022-8ee8-268e43fdb65d
+2025-07-28 08:32:31,112 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 0ad82cb0-c544-4022-8ee8-268e43fdb65d
+2025-07-28 08:32:31,152 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 0ad82cb0-c544-4022-8ee8-268e43fdb65d
+2025-07-28 08:32:31,160 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 57
+2025-07-28 08:32:31,161 - ServerEngine - INFO - Launch job_id: 0ad82cb0-c544-4022-8ee8-268e43fdb65d  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:32:31,171 - JobRunner - INFO - [identity=server, run=?] - Started run: 0ad82cb0-c544-4022-8ee8-268e43fdb65d for clients: site-1,site-2
+2025-07-28 08:32:31,172 - JobRunner - INFO - [identity=server, run=?] - Job: 0ad82cb0-c544-4022-8ee8-268e43fdb65d started to run, status changed to RUNNING.
+2025-07-28 08:32:31,658 - conn_manager - INFO - Connection [CN00004 127.0.0.1:45458 <= 127.0.0.1:37482] is created: PID: 1
+2025-07-28 08:32:43,535 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:32:43,541 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:32:53,558 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:32:53,566 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:03,589 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:03,594 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:13,615 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:13,620 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:23,650 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:23,654 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:33,680 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:33,683 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:43,711 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:33:43,714 - ServerEngine - WARNING - notified SJ of dead-job: job_id='0ad82cb0-c544-4022-8ee8-268e43fdb65d'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:33:46,347 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-28 08:33:47,313 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (0ad82cb0-c544-4022-8ee8-268e43fdb65d) on clients ...
+2025-07-28 08:34:24,476 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0, get result: (scheduled).
+2025-07-28 08:34:24,486 - JobRunner - INFO - [identity=server, run=?] - Got the job: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0 from the scheduler to run
+2025-07-28 08:34:24,529 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0
+2025-07-28 08:34:24,530 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0
+2025-07-28 08:34:24,568 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0
+2025-07-28 08:34:24,578 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 118
+2025-07-28 08:34:24,579 - ServerEngine - INFO - Launch job_id: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:34:24,596 - JobRunner - INFO - [identity=server, run=?] - Started run: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0 for clients: site-1,site-2
+2025-07-28 08:34:24,599 - JobRunner - INFO - [identity=server, run=?] - Job: 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0 started to run, status changed to RUNNING.
+2025-07-28 08:34:25,071 - conn_manager - INFO - Connection [CN00005 127.0.0.1:45458 <= 127.0.0.1:50556] is created: PID: 1
+2025-07-28 08:34:33,825 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:34:33,829 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:43,860 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:43,864 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:34:53,897 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:34:53,900 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:03,931 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:03,936 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:13,960 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:13,964 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:23,988 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:23,994 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:34,020 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-2'; reason='missing job on client'
+2025-07-28 08:35:34,025 - ServerEngine - WARNING - notified SJ of dead-job: job_id='9c711ebb-94c8-4318-8dd8-a9224a9ed2a0'; client_name='site-1'; reason='missing job on client'
+2025-07-28 08:35:36,709 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-28 08:35:37,727 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (9c711ebb-94c8-4318-8dd8-a9224a9ed2a0) on clients ...
+2025-07-28 08:37:40,157 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 6191742e-4a1b-475c-8dc3-96e57d7f7e73, get result: (scheduled).
+2025-07-28 08:37:40,161 - JobRunner - INFO - [identity=server, run=?] - Got the job: 6191742e-4a1b-475c-8dc3-96e57d7f7e73 from the scheduler to run
+2025-07-28 08:37:40,231 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 6191742e-4a1b-475c-8dc3-96e57d7f7e73
+2025-07-28 08:37:40,231 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 6191742e-4a1b-475c-8dc3-96e57d7f7e73
+2025-07-28 08:37:40,270 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 6191742e-4a1b-475c-8dc3-96e57d7f7e73
+2025-07-28 08:37:40,280 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 178
+2025-07-28 08:37:40,280 - ServerEngine - INFO - Launch job_id: 6191742e-4a1b-475c-8dc3-96e57d7f7e73  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:37:40,296 - JobRunner - INFO - [identity=server, run=?] - Started run: 6191742e-4a1b-475c-8dc3-96e57d7f7e73 for clients: site-1,site-2
+2025-07-28 08:37:40,299 - JobRunner - INFO - [identity=server, run=?] - Job: 6191742e-4a1b-475c-8dc3-96e57d7f7e73 started to run, status changed to RUNNING.
+2025-07-28 08:37:40,752 - conn_manager - INFO - Connection [CN00006 127.0.0.1:45458 <= 127.0.0.1:41114] is created: PID: 1
+2025-07-28 08:37:41,588 - conn_manager - INFO - Connection [CN00007 0.0.0.0:8002 <= ipv4:172.18.0.3:57166 SSL site-2] is created: PID: 1
+2025-07-28 08:37:41,589 - conn_manager - INFO - Connection [CN00008 0.0.0.0:8002 <= ipv4:172.18.0.4:52910 SSL site-1] is created: PID: 1
+2025-07-28 08:37:42,309 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-28 08:37:44,403 - ServerEngine - INFO - Job: 6191742e-4a1b-475c-8dc3-96e57d7f7e73 child process exit with return code 1
+2025-07-28 08:37:45,153 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (6191742e-4a1b-475c-8dc3-96e57d7f7e73) on clients ...
+2025-07-28 08:37:55,191 - CoreCell - WARNING - server: no waiter for req 1bfa3e75-df4a-4412-8918-74c02c66ecac - the reply is too late
+2025-07-28 08:37:55,193 - CoreCell - WARNING - server: no waiter for req 1bfa3e75-df4a-4412-8918-74c02c66ecac - the reply is too late
+2025-07-28 08:37:55,233 - conn_manager - INFO - Connection [CN00008 Not Connected] is closed PID: 1
+2025-07-28 08:37:55,296 - conn_manager - INFO - Connection [CN00007 Not Connected] is closed PID: 1
+2025-07-28 08:40:34,969 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job f23f566c-2e77-4826-bebd-08b97b85cfc6, get result: (scheduled).
+2025-07-28 08:40:34,972 - JobRunner - INFO - [identity=server, run=?] - Got the job: f23f566c-2e77-4826-bebd-08b97b85cfc6 from the scheduler to run
+2025-07-28 08:40:35,011 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: f23f566c-2e77-4826-bebd-08b97b85cfc6
+2025-07-28 08:40:35,012 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: f23f566c-2e77-4826-bebd-08b97b85cfc6
+2025-07-28 08:40:35,117 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: f23f566c-2e77-4826-bebd-08b97b85cfc6
+2025-07-28 08:40:35,134 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 238
+2025-07-28 08:40:35,135 - ServerEngine - INFO - Launch job_id: f23f566c-2e77-4826-bebd-08b97b85cfc6  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:40:35,149 - JobRunner - INFO - [identity=server, run=?] - Started run: f23f566c-2e77-4826-bebd-08b97b85cfc6 for clients: site-1,site-2
+2025-07-28 08:40:35,151 - JobRunner - INFO - [identity=server, run=?] - Job: f23f566c-2e77-4826-bebd-08b97b85cfc6 started to run, status changed to RUNNING.
+2025-07-28 08:40:35,630 - conn_manager - INFO - Connection [CN00009 127.0.0.1:45458 <= 127.0.0.1:48888] is created: PID: 1
+2025-07-28 08:40:36,515 - conn_manager - INFO - Connection [CN00010 0.0.0.0:8002 <= ipv4:172.18.0.3:45552 SSL site-2] is created: PID: 1
+2025-07-28 08:40:36,515 - conn_manager - INFO - Connection [CN00011 0.0.0.0:8002 <= ipv4:172.18.0.4:45438 SSL site-1] is created: PID: 1
+2025-07-28 08:40:38,257 - conn_manager - INFO - Connection [CN00009 Not Connected] is closed PID: 1
+2025-07-28 08:40:40,594 - ServerEngine - INFO - Job: f23f566c-2e77-4826-bebd-08b97b85cfc6 child process exit with return code 1
+2025-07-28 08:40:40,823 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (f23f566c-2e77-4826-bebd-08b97b85cfc6) on clients ...
+2025-07-28 08:40:50,891 - CoreCell - WARNING - server: no waiter for req 6d217b1d-31af-49c6-aae3-220f4b1159e5 - the reply is too late
+2025-07-28 08:40:50,893 - CoreCell - WARNING - server: no waiter for req 6d217b1d-31af-49c6-aae3-220f4b1159e5 - the reply is too late
+2025-07-28 08:40:50,954 - conn_manager - INFO - Connection [CN00010 Not Connected] is closed PID: 1
+2025-07-28 08:40:50,974 - conn_manager - INFO - Connection [CN00011 Not Connected] is closed PID: 1
+2025-07-28 08:41:05,242 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 50f963d0-9cff-4b28-b12d-12a26160676a, get result: (scheduled).
+2025-07-28 08:41:05,245 - JobRunner - INFO - [identity=server, run=?] - Got the job: 50f963d0-9cff-4b28-b12d-12a26160676a from the scheduler to run
+2025-07-28 08:41:05,280 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 50f963d0-9cff-4b28-b12d-12a26160676a
+2025-07-28 08:41:05,280 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 50f963d0-9cff-4b28-b12d-12a26160676a
+2025-07-28 08:41:05,314 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 50f963d0-9cff-4b28-b12d-12a26160676a
+2025-07-28 08:41:05,324 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 299
+2025-07-28 08:41:05,325 - ServerEngine - INFO - Launch job_id: 50f963d0-9cff-4b28-b12d-12a26160676a  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:41:05,343 - JobRunner - INFO - [identity=server, run=?] - Started run: 50f963d0-9cff-4b28-b12d-12a26160676a for clients: site-1,site-2
+2025-07-28 08:41:05,344 - JobRunner - INFO - [identity=server, run=?] - Job: 50f963d0-9cff-4b28-b12d-12a26160676a started to run, status changed to RUNNING.
+2025-07-28 08:41:05,839 - conn_manager - INFO - Connection [CN00012 127.0.0.1:45458 <= 127.0.0.1:38906] is created: PID: 1
+2025-07-28 08:41:06,633 - conn_manager - INFO - Connection [CN00013 0.0.0.0:8002 <= ipv4:172.18.0.3:33562 SSL site-2] is created: PID: 1
+2025-07-28 08:41:06,633 - conn_manager - INFO - Connection [CN00014 0.0.0.0:8002 <= ipv4:172.18.0.4:48136 SSL site-1] is created: PID: 1
+2025-07-28 08:41:07,167 - conn_manager - INFO - Connection [CN00015 0.0.0.0:8002 <= ipv4:172.18.0.3:59438 SSL site-2] is created: PID: 1
+2025-07-28 08:41:07,168 - conn_manager - INFO - Connection [CN00016 0.0.0.0:8002 <= ipv4:172.18.0.4:35212 SSL site-1] is created: PID: 1
+2025-07-28 08:41:08,584 - conn_manager - INFO - Connection [CN00017 0.0.0.0:8002 <= ipv4:172.18.0.4:35218 SSL site-1] is created: PID: 1
+2025-07-28 08:41:08,600 - conn_manager - INFO - Connection [CN00018 0.0.0.0:8002 <= ipv4:172.18.0.3:59446 SSL site-2] is created: PID: 1
+2025-07-28 08:43:22,988 - conn_manager - INFO - Connection [CN00018 Not Connected] is closed PID: 1
+2025-07-28 08:43:23,005 - conn_manager - INFO - Connection [CN00017 Not Connected] is closed PID: 1
+2025-07-28 08:43:23,929 - conn_manager - INFO - Connection [CN00015 Not Connected] is closed PID: 1
+2025-07-28 08:43:23,935 - conn_manager - INFO - Connection [CN00016 Not Connected] is closed PID: 1
+2025-07-28 08:43:26,092 - conn_manager - INFO - Connection [CN00013 Not Connected] is closed PID: 1
+2025-07-28 08:43:26,126 - conn_manager - INFO - Connection [CN00014 Not Connected] is closed PID: 1
+2025-07-28 08:43:26,431 - conn_manager - INFO - Connection [CN00012 Not Connected] is closed PID: 1
+2025-07-28 08:43:27,136 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (50f963d0-9cff-4b28-b12d-12a26160676a) on clients ...
+2025-07-28 08:44:46,830 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 2ce0a45d-598c-40b4-a72d-09e5d340ad1e, get result: (scheduled).
+2025-07-28 08:44:46,834 - JobRunner - INFO - [identity=server, run=?] - Got the job: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e from the scheduler to run
+2025-07-28 08:44:46,870 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e
+2025-07-28 08:44:46,870 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e
+2025-07-28 08:44:46,909 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e
+2025-07-28 08:44:46,922 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 375
+2025-07-28 08:44:46,924 - ServerEngine - INFO - Launch job_id: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-28 08:44:46,946 - JobRunner - INFO - [identity=server, run=?] - Started run: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e for clients: site-1,site-2
+2025-07-28 08:44:46,948 - JobRunner - INFO - [identity=server, run=?] - Job: 2ce0a45d-598c-40b4-a72d-09e5d340ad1e started to run, status changed to RUNNING.
+2025-07-28 08:44:47,412 - conn_manager - INFO - Connection [CN00019 127.0.0.1:45458 <= 127.0.0.1:59202] is created: PID: 1
+2025-07-28 08:44:48,351 - conn_manager - INFO - Connection [CN00020 0.0.0.0:8002 <= ipv4:172.18.0.4:33636 SSL site-1] is created: PID: 1
+2025-07-28 08:44:48,351 - conn_manager - INFO - Connection [CN00021 0.0.0.0:8002 <= ipv4:172.18.0.3:57088 SSL site-2] is created: PID: 1
+2025-07-28 08:44:48,882 - conn_manager - INFO - Connection [CN00022 0.0.0.0:8002 <= ipv4:172.18.0.4:33648 SSL site-1] is created: PID: 1
+2025-07-28 08:44:48,884 - conn_manager - INFO - Connection [CN00023 0.0.0.0:8002 <= ipv4:172.18.0.3:57098 SSL site-2] is created: PID: 1
+2025-07-28 08:44:50,234 - conn_manager - INFO - Connection [CN00024 0.0.0.0:8002 <= ipv4:172.18.0.3:57106 SSL site-2] is created: PID: 1
+2025-07-28 08:44:50,234 - conn_manager - INFO - Connection [CN00025 0.0.0.0:8002 <= ipv4:172.18.0.4:33658 SSL site-1] is created: PID: 1
+2025-07-28 08:47:33,149 - conn_manager - INFO - Connection [CN00024 Not Connected] is closed PID: 1
+2025-07-28 08:47:33,153 - conn_manager - INFO - Connection [CN00023 Not Connected] is closed PID: 1
+2025-07-28 08:47:33,188 - conn_manager - INFO - Connection [CN00021 Not Connected] is closed PID: 1
+2025-07-28 08:47:33,649 - conn_manager - INFO - Connection [CN00025 Not Connected] is closed PID: 1
+2025-07-28 08:47:33,654 - conn_manager - INFO - Connection [CN00022 Not Connected] is closed PID: 1
+2025-07-28 08:47:33,682 - conn_manager - INFO - Connection [CN00020 Not Connected] is closed PID: 1
+2025-07-28 08:47:35,137 - conn_manager - INFO - Connection [CN00019 Not Connected] is closed PID: 1
+2025-07-28 09:25:15,798 - ClientManager - INFO - Client Name:site-1 	Token: ecb09b37-418b-4e6b-a2eb-44967ffe9a89 left.  Total clients: 1
+2025-07-28 09:25:16,006 - ServerEngine - INFO - FL server restart.
+2025-07-28 09:25:16,012 - ClientManager - INFO - Client Name:site-2 	Token: 82841405-4ba1-4ca7-9a7c-a29a61b9a90a left.  Total clients: 0
+2025-07-28 09:25:16,013 - JobRunner - INFO - [identity=server, run=?] - Stop all the running jobs.
+2025-07-28 09:25:16,015 - FederatedServer - INFO - shutting down server
+2025-07-28 09:25:16,016 - FederatedServer - INFO - canceling sync locks
+2025-07-28 09:25:16,017 - FederatedServer - INFO - server off
+2025-07-28 09:25:17,180 - hci - INFO - Admin Server server1 on Port 8003 shutdown!
+2025-07-28 09:25:17,181 - ObjectStreamer - INFO - Stream Runer is Shut Down
+2025-07-28 09:25:18,034 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-28 09:25:18,096 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-28 09:25:19,086 - MPM - INFO - MPM: Good Bye!
+2025-07-29 07:24:31,653 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 07:24:31,749 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 07:24:31,847 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 07:24:31,847 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:11105] is starting
+2025-07-29 07:24:32,348 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:11105
+2025-07-29 07:24:32,349 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 07:24:32,350 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:24:32,352 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 07:24:32,354 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:24:32,354 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:24:32,355 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 07:24:32,355 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 07:24:32,356 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 07:24:32,356 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 07:24:32,360 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 07:24:32,360 - root - INFO - Server started
+2025-07-29 07:24:32,854 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 07:24:33,354 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.18.0.2:58088 SSL site-1] is created: PID: 1
+2025-07-29 07:24:33,355 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.18.0.3:42998 SSL site-2] is created: PID: 1
+2025-07-29 07:24:34,728 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 07:24:34,729 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 07:24:34,729 - ClientManager - INFO - Client: New client site-1@172.18.0.2 joined. Sent token: 5fe339dd-fd31-44b7-ab24-c1e24c7d2f96.  Total clients: 1
+2025-07-29 07:24:34,753 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 07:24:34,754 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 07:24:34,754 - ClientManager - INFO - Client: New client site-2@172.18.0.3 joined. Sent token: 9216a088-5e08-45d3-8166-c0fa8d87106e.  Total clients: 2
+2025-07-29 07:24:57,442 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 129919e0-1353-4a08-9e27-1f6523565191, get result: (scheduled).
+2025-07-29 07:24:57,446 - JobRunner - INFO - [identity=server, run=?] - Got the job: 129919e0-1353-4a08-9e27-1f6523565191 from the scheduler to run
+2025-07-29 07:24:57,478 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 129919e0-1353-4a08-9e27-1f6523565191
+2025-07-29 07:24:57,478 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 129919e0-1353-4a08-9e27-1f6523565191
+2025-07-29 07:24:57,531 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 129919e0-1353-4a08-9e27-1f6523565191
+2025-07-29 07:24:57,538 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 57
+2025-07-29 07:24:57,542 - ServerEngine - INFO - Launch job_id: 129919e0-1353-4a08-9e27-1f6523565191  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-29 07:24:57,558 - JobRunner - INFO - [identity=server, run=?] - Started run: 129919e0-1353-4a08-9e27-1f6523565191 for clients: site-1,site-2
+2025-07-29 07:24:57,559 - JobRunner - INFO - [identity=server, run=?] - Job: 129919e0-1353-4a08-9e27-1f6523565191 started to run, status changed to RUNNING.
+2025-07-29 07:24:57,972 - conn_manager - INFO - Connection [CN00004 127.0.0.1:11105 <= 127.0.0.1:56168] is created: PID: 1
+2025-07-29 07:24:58,750 - conn_manager - INFO - Connection [CN00005 0.0.0.0:8002 <= ipv4:172.18.0.3:58580 SSL site-2] is created: PID: 1
+2025-07-29 07:24:58,751 - conn_manager - INFO - Connection [CN00006 0.0.0.0:8002 <= ipv4:172.18.0.2:48670 SSL site-1] is created: PID: 1
+2025-07-29 07:24:59,797 - conn_manager - INFO - Connection [CN00007 0.0.0.0:8002 <= ipv4:172.18.0.2:48672 SSL site-1] is created: PID: 1
+2025-07-29 07:24:59,857 - conn_manager - INFO - Connection [CN00008 0.0.0.0:8002 <= ipv4:172.18.0.3:58582 SSL site-2] is created: PID: 1
+2025-07-29 07:25:01,479 - conn_manager - INFO - Connection [CN00009 0.0.0.0:8002 <= ipv4:172.18.0.2:48678 SSL site-1] is created: PID: 1
+2025-07-29 07:25:01,505 - conn_manager - INFO - Connection [CN00010 0.0.0.0:8002 <= ipv4:172.18.0.3:58590 SSL site-2] is created: PID: 1
+2025-07-29 07:27:41,558 - conn_manager - INFO - Connection [CN00010 Not Connected] is closed PID: 1
+2025-07-29 07:27:41,561 - conn_manager - INFO - Connection [CN00008 Not Connected] is closed PID: 1
+2025-07-29 07:27:41,597 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-29 07:27:41,607 - conn_manager - INFO - Connection [CN00009 Not Connected] is closed PID: 1
+2025-07-29 07:27:41,610 - conn_manager - INFO - Connection [CN00007 Not Connected] is closed PID: 1
+2025-07-29 07:27:41,633 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-29 07:27:43,052 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-29 07:35:40,959 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 07:35:41,027 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 07:35:41,113 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 07:35:41,116 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:29923] is starting
+2025-07-29 07:35:41,620 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:29923
+2025-07-29 07:35:41,623 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 07:35:41,630 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:35:41,637 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 07:35:41,640 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 07:35:41,640 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:35:41,642 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:35:41,642 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 07:35:41,643 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 07:35:41,644 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 07:35:41,647 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.18.0.3:58242 SSL site-2] is created: PID: 1
+2025-07-29 07:35:41,647 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.18.0.2:38820 SSL site-1] is created: PID: 1
+2025-07-29 07:35:41,650 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 07:35:41,650 - root - INFO - Server started
+2025-07-29 07:35:42,142 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 07:35:44,055 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 07:35:44,056 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 07:35:44,056 - ClientManager - INFO - Client: New client site-1@172.18.0.2 joined. Sent token: 9ca5f46b-da8d-4da1-8e3b-e8e3acd15b5f.  Total clients: 1
+2025-07-29 07:35:44,065 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 07:35:44,066 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 07:35:44,066 - ClientManager - INFO - Client: New client site-2@172.18.0.3 joined. Sent token: 60d642d1-2358-4ca5-93f8-6da4db953290.  Total clients: 2
+2025-07-29 07:35:55,692 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job eaf7e6db-fb97-444e-b44d-be2adc4a0dd4, get result: (scheduled).
+2025-07-29 07:35:55,695 - JobRunner - INFO - [identity=server, run=?] - Got the job: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4 from the scheduler to run
+2025-07-29 07:35:55,726 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4
+2025-07-29 07:35:55,727 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4
+2025-07-29 07:35:55,776 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4
+2025-07-29 07:35:55,781 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 57
+2025-07-29 07:35:55,781 - ServerEngine - INFO - Launch job_id: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-29 07:35:55,795 - JobRunner - INFO - [identity=server, run=?] - Started run: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4 for clients: site-1,site-2
+2025-07-29 07:35:55,797 - JobRunner - INFO - [identity=server, run=?] - Job: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4 started to run, status changed to RUNNING.
+2025-07-29 07:35:56,219 - conn_manager - INFO - Connection [CN00004 127.0.0.1:29923 <= 127.0.0.1:43602] is created: PID: 1
+2025-07-29 07:35:56,946 - conn_manager - INFO - Connection [CN00005 0.0.0.0:8002 <= ipv4:172.18.0.3:58474 SSL site-2] is created: PID: 1
+2025-07-29 07:35:56,947 - conn_manager - INFO - Connection [CN00006 0.0.0.0:8002 <= ipv4:172.18.0.2:50056 SSL site-1] is created: PID: 1
+2025-07-29 07:35:59,170 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-29 07:36:01,585 - ServerEngine - INFO - Job: eaf7e6db-fb97-444e-b44d-be2adc4a0dd4 child process exit with return code 1
+2025-07-29 07:36:01,704 - JobRunner - INFO - [identity=server, run=?] - Try to abort job (eaf7e6db-fb97-444e-b44d-be2adc4a0dd4) on clients ...
+2025-07-29 07:36:11,729 - CoreCell - WARNING - server: no waiter for req d9ab8add-830f-4b0f-a983-679a5413a939 - the reply is too late
+2025-07-29 07:36:11,752 - CoreCell - WARNING - server: no waiter for req d9ab8add-830f-4b0f-a983-679a5413a939 - the reply is too late
+2025-07-29 07:36:11,790 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-29 07:36:11,833 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-29 07:53:40,617 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 07:53:40,689 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 07:53:40,763 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 07:53:40,764 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:4610] is starting
+2025-07-29 07:53:41,272 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:4610
+2025-07-29 07:53:41,278 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 07:53:41,290 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:53:41,291 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 07:53:41,292 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:53:41,292 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:53:41,293 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 07:53:41,293 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 07:53:41,295 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 07:53:41,296 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 07:53:41,299 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.4:34378 SSL site-1] is created: PID: 1
+2025-07-29 07:53:41,300 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.3:39924 SSL site-2] is created: PID: 1
+2025-07-29 07:53:41,302 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 07:53:41,302 - root - INFO - Server started
+2025-07-29 07:53:41,794 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 07:53:43,707 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 07:53:43,707 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 07:53:43,708 - ClientManager - INFO - Client: New client site-2@172.25.0.3 joined. Sent token: 4a48ea63-8099-45b8-9f7e-c0627d807317.  Total clients: 1
+2025-07-29 07:53:43,717 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 07:53:43,717 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 07:53:43,717 - ClientManager - INFO - Client: New client site-1@172.25.0.4 joined. Sent token: 25801a39-3365-424e-b664-77556fb12b03.  Total clients: 2

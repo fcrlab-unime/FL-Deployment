@@ -1,0 +1,345 @@
+2025-07-28 06:38:29,851 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-28 06:38:29,855 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:46145] is starting
+2025-07-28 06:38:30,357 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:46145
+2025-07-28 06:38:30,358 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-28 06:38:30,359 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-28 06:38:30,359 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-28 06:38:30,360 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-28 06:38:30,364 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 06:38:30,365 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-28 06:38:30,367 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-28 06:38:30,368 - GrpcDriver - INFO - CLIENT: finished connection [CN00002 Not Connected]
+2025-07-28 06:38:30,711 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 06:38:30,711 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 06:38:30,712 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 06:38:30,712 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 06:38:30,714 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 06:38:31,371 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 06:38:31,371 - conn_manager - INFO - Connection [CN00003 N/A => server1:8002] is created: PID: 1
+2025-07-28 06:38:32,788 - Authenticator - INFO - verified server identity 'server1'
+2025-07-28 06:38:32,819 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-28 06:38:32,819 - FederatedClient - INFO - Successfully registered client:site-2 for project single-node. Token:056fc250-ece5-4186-b863-91bbdc776179 SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-28 06:38:32,825 - FederatedClient - INFO - Got engine after 2.4650306701660156 seconds
+2025-07-28 06:38:32,825 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-28 07:00:30,562 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-28 07:00:30,563 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:7851] is starting
+2025-07-28 07:00:31,065 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:7851
+2025-07-28 07:00:31,066 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-28 07:00:31,067 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-28 07:00:31,068 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-28 07:00:31,069 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-28 07:00:31,078 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:00:31,079 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:00:31,080 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-28 07:00:31,081 - GrpcDriver - INFO - CLIENT: finished connection [CN00002 Not Connected]
+2025-07-28 07:00:31,449 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 07:00:31,452 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 07:00:31,456 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 07:00:31,460 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 07:00:31,464 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:32,084 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:00:32,084 - conn_manager - INFO - Connection [CN00003 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:00:32,123 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-28 07:00:32,124 - GrpcDriver - INFO - CLIENT: finished connection [CN00003 Not Connected]
+2025-07-28 07:00:33,466 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:34,128 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:00:34,129 - conn_manager - INFO - Connection [CN00004 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:00:34,137 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-28 07:00:34,138 - GrpcDriver - INFO - CLIENT: finished connection [CN00004 Not Connected]
+2025-07-28 07:00:35,468 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:37,470 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:38,145 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:00:38,148 - conn_manager - INFO - Connection [CN00005 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:00:38,155 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-28 07:00:38,157 - GrpcDriver - INFO - CLIENT: finished connection [CN00005 Not Connected]
+2025-07-28 07:00:38,157 - conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://server1:8002] in 8 seconds
+2025-07-28 07:00:39,478 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:41,486 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:43,493 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:45,504 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:46,166 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:00:46,168 - conn_manager - INFO - Connection [CN00006 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:00:46,174 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-28 07:00:46,176 - GrpcDriver - INFO - CLIENT: finished connection [CN00006 Not Connected]
+2025-07-28 07:00:46,176 - conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://server1:8002] in 10 seconds
+2025-07-28 07:00:47,507 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:49,516 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:51,522 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:53,529 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:55,533 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:56,183 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:00:56,184 - conn_manager - INFO - Connection [CN00007 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:00:56,187 - conn_manager - INFO - Connection [CN00007 Not Connected] is closed PID: 1
+2025-07-28 07:00:56,187 - GrpcDriver - INFO - CLIENT: finished connection [CN00007 Not Connected]
+2025-07-28 07:00:56,188 - conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://server1:8002] in 10 seconds
+2025-07-28 07:00:57,537 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:00:59,543 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:01:01,546 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:01:03,548 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:03:12,000 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-28 07:03:12,001 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:33972] is starting
+2025-07-28 07:03:12,504 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:33972
+2025-07-28 07:03:12,518 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-28 07:03:12,524 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-28 07:03:12,525 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-28 07:03:12,527 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-28 07:03:12,536 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 07:03:12,537 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-28 07:03:12,874 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 07:03:12,875 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 07:03:12,879 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 07:03:12,880 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 07:03:12,945 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 07:03:14,958 - Authenticator - INFO - verified server identity 'server1'
+2025-07-28 07:03:14,991 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-28 07:03:14,992 - FederatedClient - INFO - Successfully registered client:site-2 for project single-node. Token:f6ea2013-ab3b-4d59-8ce5-580ca8027a68 SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-28 07:03:14,994 - FederatedClient - INFO - Got engine after 2.4668915271759033 seconds
+2025-07-28 07:03:14,994 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-28 07:34:18,420 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:34:18,428 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 46
+2025-07-28 07:34:18,429 - JobExecutor - INFO - Launched job 8b03949c-3bfc-402c-9231-2620b53750f5 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:34:18,430 - JobExecutor - INFO - run (8b03949c-3bfc-402c-9231-2620b53750f5): waiting for child worker process to finish.
+2025-07-28 07:34:21,278 - JobExecutor - INFO - run (8b03949c-3bfc-402c-9231-2620b53750f5): child worker process finished with RC 1
+2025-07-28 07:37:32,986 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:37:32,995 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 93
+2025-07-28 07:37:32,996 - JobExecutor - INFO - Launched job 444b1750-1979-4855-89aa-ed74795de6d9 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:37:32,997 - JobExecutor - INFO - run (444b1750-1979-4855-89aa-ed74795de6d9): waiting for child worker process to finish.
+2025-07-28 07:37:35,864 - JobExecutor - INFO - run (444b1750-1979-4855-89aa-ed74795de6d9): child worker process finished with RC 1
+2025-07-28 07:38:29,197 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:38:29,205 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 140
+2025-07-28 07:38:29,206 - JobExecutor - INFO - Launched job d7fb16a2-c6ab-456e-9584-838a5add098a with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:38:29,207 - JobExecutor - INFO - run (d7fb16a2-c6ab-456e-9584-838a5add098a): waiting for child worker process to finish.
+2025-07-28 07:38:32,050 - JobExecutor - INFO - run (d7fb16a2-c6ab-456e-9584-838a5add098a): child worker process finished with RC 1
+2025-07-28 07:43:33,050 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:43:33,059 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 187
+2025-07-28 07:43:33,063 - JobExecutor - INFO - Launched job 9e4de48e-09b7-46d6-83c5-3247bf198678 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:43:33,064 - JobExecutor - INFO - run (9e4de48e-09b7-46d6-83c5-3247bf198678): waiting for child worker process to finish.
+2025-07-28 07:43:35,923 - JobExecutor - INFO - run (9e4de48e-09b7-46d6-83c5-3247bf198678): child worker process finished with RC 1
+2025-07-28 07:45:33,445 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:45:33,452 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 234
+2025-07-28 07:45:33,452 - JobExecutor - INFO - Launched job f85f8732-30f7-4ecf-9020-50503410ab6f with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:45:33,453 - JobExecutor - INFO - run (f85f8732-30f7-4ecf-9020-50503410ab6f): waiting for child worker process to finish.
+2025-07-28 07:45:34,567 - conn_manager - INFO - Connection [CN00003 127.0.0.1:33972 <= 127.0.0.1:56928] is created: PID: 1
+2025-07-28 07:45:47,792 - JobExecutor - INFO - run (f85f8732-30f7-4ecf-9020-50503410ab6f): child worker process terminated
+2025-07-28 07:45:47,799 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:45:47,808 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-28 07:45:47,809 - JobExecutor - INFO - run (f85f8732-30f7-4ecf-9020-50503410ab6f): child worker process finished with RC 1
+2025-07-28 07:45:47,848 - JobExecutor - INFO - run (f85f8732-30f7-4ecf-9020-50503410ab6f): child worker process terminated
+2025-07-28 07:45:47,849 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:47:43,975 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:47:43,984 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 316
+2025-07-28 07:47:43,986 - JobExecutor - INFO - Launched job ddb867fe-9c36-44e0-812a-12bab69ba0bc with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:47:43,987 - JobExecutor - INFO - run (ddb867fe-9c36-44e0-812a-12bab69ba0bc): waiting for child worker process to finish.
+2025-07-28 07:47:45,025 - conn_manager - INFO - Connection [CN00004 127.0.0.1:33972 <= 127.0.0.1:40890] is created: PID: 1
+2025-07-28 07:47:58,263 - JobExecutor - INFO - run (ddb867fe-9c36-44e0-812a-12bab69ba0bc): child worker process terminated
+2025-07-28 07:47:58,272 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:47:58,280 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-28 07:47:58,280 - JobExecutor - INFO - run (ddb867fe-9c36-44e0-812a-12bab69ba0bc): child worker process finished with RC 1
+2025-07-28 07:47:58,315 - JobExecutor - INFO - run (ddb867fe-9c36-44e0-812a-12bab69ba0bc): child worker process terminated
+2025-07-28 07:47:58,315 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:48:16,131 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:48:16,137 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 397
+2025-07-28 07:48:16,138 - JobExecutor - INFO - Launched job 4c389997-b285-4f52-9d94-5d8bcb7170e9 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:48:16,138 - JobExecutor - INFO - run (4c389997-b285-4f52-9d94-5d8bcb7170e9): waiting for child worker process to finish.
+2025-07-28 07:48:17,136 - conn_manager - INFO - Connection [CN00005 127.0.0.1:33972 <= 127.0.0.1:34324] is created: PID: 1
+2025-07-28 07:48:30,379 - JobExecutor - INFO - run (4c389997-b285-4f52-9d94-5d8bcb7170e9): child worker process terminated
+2025-07-28 07:48:30,384 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:48:30,389 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-28 07:48:30,389 - JobExecutor - INFO - run (4c389997-b285-4f52-9d94-5d8bcb7170e9): child worker process finished with RC 1
+2025-07-28 07:48:30,432 - JobExecutor - INFO - run (4c389997-b285-4f52-9d94-5d8bcb7170e9): child worker process terminated
+2025-07-28 07:48:30,433 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:48:43,263 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:48:43,269 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 478
+2025-07-28 07:48:43,270 - JobExecutor - INFO - Launched job 7a1da8e3-6cee-4859-aed2-50349a68a9ec with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:48:43,271 - JobExecutor - INFO - run (7a1da8e3-6cee-4859-aed2-50349a68a9ec): waiting for child worker process to finish.
+2025-07-28 07:48:44,349 - conn_manager - INFO - Connection [CN00006 127.0.0.1:33972 <= 127.0.0.1:50094] is created: PID: 1
+2025-07-28 07:48:59,499 - JobExecutor - INFO - run (7a1da8e3-6cee-4859-aed2-50349a68a9ec): child worker process terminated
+2025-07-28 07:48:59,502 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:48:59,510 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-28 07:48:59,511 - JobExecutor - INFO - run (7a1da8e3-6cee-4859-aed2-50349a68a9ec): child worker process finished with RC 1
+2025-07-28 07:48:59,550 - JobExecutor - INFO - run (7a1da8e3-6cee-4859-aed2-50349a68a9ec): child worker process terminated
+2025-07-28 07:48:59,551 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 07:50:50,712 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:50:50,721 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 563
+2025-07-28 07:50:50,724 - JobExecutor - INFO - Launched job 4d3831c6-9600-45f6-9679-4db1f1a0ae49 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:50:50,725 - JobExecutor - INFO - run (4d3831c6-9600-45f6-9679-4db1f1a0ae49): waiting for child worker process to finish.
+2025-07-28 07:50:51,818 - conn_manager - INFO - Connection [CN00007 127.0.0.1:33972 <= 127.0.0.1:58034] is created: PID: 1
+2025-07-28 07:50:56,137 - conn_manager - INFO - Connection [CN00007 Not Connected] is closed PID: 1
+2025-07-28 07:50:58,793 - JobExecutor - INFO - run (4d3831c6-9600-45f6-9679-4db1f1a0ae49): child worker process finished with RC 0
+2025-07-28 07:51:25,918 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 07:51:28,925 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 668
+2025-07-28 07:51:28,926 - JobExecutor - INFO - Launched job 77be770a-32c3-4552-a619-308eb4ee5a8d with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 07:51:28,926 - JobExecutor - INFO - run (77be770a-32c3-4552-a619-308eb4ee5a8d): waiting for child worker process to finish.
+2025-07-28 07:51:29,796 - conn_manager - INFO - Connection [CN00008 127.0.0.1:33972 <= 127.0.0.1:51586] is created: PID: 1
+2025-07-28 07:51:31,994 - conn_manager - INFO - Connection [CN00008 Not Connected] is closed PID: 1
+2025-07-28 07:51:33,870 - JobExecutor - INFO - run (77be770a-32c3-4552-a619-308eb4ee5a8d): child worker process finished with RC 0
+2025-07-28 08:28:38,105 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:28:38,116 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 772
+2025-07-28 08:28:38,116 - JobExecutor - INFO - Launched job 0785d7b4-1fc4-4e02-8aeb-3d13c76394be with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:28:38,117 - JobExecutor - INFO - run (0785d7b4-1fc4-4e02-8aeb-3d13c76394be): waiting for child worker process to finish.
+2025-07-28 08:28:41,023 - JobExecutor - INFO - run (0785d7b4-1fc4-4e02-8aeb-3d13c76394be): child worker process finished with RC 1
+2025-07-28 08:29:27,358 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:29:27,364 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 819
+2025-07-28 08:29:27,364 - JobExecutor - INFO - Launched job 50973e70-0470-47c1-a007-f2411fe369a2 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:29:27,365 - JobExecutor - INFO - run (50973e70-0470-47c1-a007-f2411fe369a2): waiting for child worker process to finish.
+2025-07-28 08:29:30,262 - JobExecutor - INFO - run (50973e70-0470-47c1-a007-f2411fe369a2): child worker process finished with RC 1
+2025-07-28 08:29:59,563 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:29:59,570 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 866
+2025-07-28 08:29:59,571 - JobExecutor - INFO - Launched job 6dabaaa6-ce32-402a-aa5e-4b6e156c241d with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:29:59,572 - JobExecutor - INFO - run (6dabaaa6-ce32-402a-aa5e-4b6e156c241d): waiting for child worker process to finish.
+2025-07-28 08:30:02,511 - JobExecutor - INFO - run (6dabaaa6-ce32-402a-aa5e-4b6e156c241d): child worker process finished with RC 1
+2025-07-28 08:31:12,895 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:31:12,907 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 913
+2025-07-28 08:31:12,907 - JobExecutor - INFO - Launched job 968f1fcb-f064-4ad0-8091-edd303cd984c with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:31:12,908 - JobExecutor - INFO - run (968f1fcb-f064-4ad0-8091-edd303cd984c): waiting for child worker process to finish.
+2025-07-28 08:31:15,829 - JobExecutor - INFO - run (968f1fcb-f064-4ad0-8091-edd303cd984c): child worker process finished with RC 1
+2025-07-28 08:32:19,605 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-28 08:32:19,606 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:58337] is starting
+2025-07-28 08:32:20,108 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:58337
+2025-07-28 08:32:20,110 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-28 08:32:20,113 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-28 08:32:20,114 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-28 08:32:20,114 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-28 08:32:20,119 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-28 08:32:20,119 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-28 08:32:20,348 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-28 08:32:20,350 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-28 08:32:20,353 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-28 08:32:20,356 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-28 08:32:20,423 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-28 08:32:22,441 - Authenticator - INFO - verified server identity 'server1'
+2025-07-28 08:32:22,480 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-28 08:32:22,480 - FederatedClient - INFO - Successfully registered client:site-2 for project single-node. Token:82841405-4ba1-4ca7-9a7c-a29a61b9a90a SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-28 08:32:22,485 - FederatedClient - INFO - Got engine after 2.371216058731079 seconds
+2025-07-28 08:32:22,486 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-28 08:32:31,162 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:32:31,168 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 46
+2025-07-28 08:32:31,169 - JobExecutor - INFO - Launched job 0ad82cb0-c544-4022-8ee8-268e43fdb65d with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:32:31,169 - JobExecutor - INFO - run (0ad82cb0-c544-4022-8ee8-268e43fdb65d): waiting for child worker process to finish.
+2025-07-28 08:32:34,129 - JobExecutor - INFO - run (0ad82cb0-c544-4022-8ee8-268e43fdb65d): child worker process finished with RC 1
+2025-07-28 08:34:24,581 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:34:24,591 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 93
+2025-07-28 08:34:24,593 - JobExecutor - INFO - Launched job 9c711ebb-94c8-4318-8dd8-a9224a9ed2a0 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:34:24,594 - JobExecutor - INFO - run (9c711ebb-94c8-4318-8dd8-a9224a9ed2a0): waiting for child worker process to finish.
+2025-07-28 08:34:27,694 - JobExecutor - INFO - run (9c711ebb-94c8-4318-8dd8-a9224a9ed2a0): child worker process finished with RC 1
+2025-07-28 08:37:40,283 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:37:40,293 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 140
+2025-07-28 08:37:40,293 - JobExecutor - INFO - Launched job 6191742e-4a1b-475c-8dc3-96e57d7f7e73 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:37:40,294 - JobExecutor - INFO - run (6191742e-4a1b-475c-8dc3-96e57d7f7e73): waiting for child worker process to finish.
+2025-07-28 08:37:41,566 - conn_manager - INFO - Connection [CN00003 127.0.0.1:58337 <= 127.0.0.1:37906] is created: PID: 1
+2025-07-28 08:37:55,182 - JobExecutor - INFO - run (6191742e-4a1b-475c-8dc3-96e57d7f7e73): child worker process terminated
+2025-07-28 08:37:55,188 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 08:37:55,196 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-28 08:37:55,197 - JobExecutor - INFO - run (6191742e-4a1b-475c-8dc3-96e57d7f7e73): child worker process finished with RC 1
+2025-07-28 08:37:55,243 - JobExecutor - INFO - run (6191742e-4a1b-475c-8dc3-96e57d7f7e73): child worker process terminated
+2025-07-28 08:37:55,244 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 08:40:35,137 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:40:35,145 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 222
+2025-07-28 08:40:35,146 - JobExecutor - INFO - Launched job f23f566c-2e77-4826-bebd-08b97b85cfc6 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:40:35,146 - JobExecutor - INFO - run (f23f566c-2e77-4826-bebd-08b97b85cfc6): waiting for child worker process to finish.
+2025-07-28 08:40:36,500 - conn_manager - INFO - Connection [CN00004 127.0.0.1:58337 <= 127.0.0.1:41018] is created: PID: 1
+2025-07-28 08:40:50,880 - JobExecutor - INFO - run (f23f566c-2e77-4826-bebd-08b97b85cfc6): child worker process terminated
+2025-07-28 08:40:50,887 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 08:40:50,897 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-28 08:40:50,898 - JobExecutor - INFO - run (f23f566c-2e77-4826-bebd-08b97b85cfc6): child worker process finished with RC 1
+2025-07-28 08:40:50,929 - JobExecutor - INFO - run (f23f566c-2e77-4826-bebd-08b97b85cfc6): child worker process terminated
+2025-07-28 08:40:50,929 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-28 08:41:05,328 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:41:05,339 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 306
+2025-07-28 08:41:05,340 - JobExecutor - INFO - Launched job 50f963d0-9cff-4b28-b12d-12a26160676a with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:41:05,341 - JobExecutor - INFO - run (50f963d0-9cff-4b28-b12d-12a26160676a): waiting for child worker process to finish.
+2025-07-28 08:41:06,621 - conn_manager - INFO - Connection [CN00005 127.0.0.1:58337 <= 127.0.0.1:52796] is created: PID: 1
+2025-07-28 08:43:25,991 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-28 08:43:28,826 - JobExecutor - INFO - run (50f963d0-9cff-4b28-b12d-12a26160676a): child worker process finished with RC 0
+2025-07-28 08:44:46,930 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-28 08:44:46,942 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 460
+2025-07-28 08:44:46,943 - JobExecutor - INFO - Launched job 2ce0a45d-598c-40b4-a72d-09e5d340ad1e with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-28 08:44:46,943 - JobExecutor - INFO - run (2ce0a45d-598c-40b4-a72d-09e5d340ad1e): waiting for child worker process to finish.
+2025-07-28 08:44:48,338 - conn_manager - INFO - Connection [CN00006 127.0.0.1:58337 <= 127.0.0.1:40650] is created: PID: 1
+2025-07-28 08:47:33,089 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-28 08:47:35,345 - JobExecutor - INFO - run (2ce0a45d-598c-40b4-a72d-09e5d340ad1e): child worker process finished with RC 0
+2025-07-28 09:25:15,171 - ClientEngine - INFO - Client shutdown...
+2025-07-28 09:25:16,008 - FederatedClient - INFO - Shutting down client run: site-2
+2025-07-28 09:25:16,016 - FederatedClient - INFO - Logout client: site-2 from server.
+2025-07-28 09:25:17,938 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-28 09:25:18,165 - GrpcDriver - INFO - CLIENT: finished connection [CN00002 Not Connected]
+2025-07-28 09:25:18,166 - MPM - INFO - MPM: Good Bye!
+2025-07-29 07:24:31,826 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-29 07:24:31,827 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:17868] is starting
+2025-07-29 07:24:32,330 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:17868
+2025-07-29 07:24:32,334 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-29 07:24:32,335 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 07:24:32,336 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 07:24:32,336 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-29 07:24:32,342 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 07:24:32,343 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-29 07:24:32,346 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-29 07:24:32,347 - GrpcDriver - INFO - CLIENT: finished connection [CN00002 Not Connected]
+2025-07-29 07:24:32,664 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:24:32,665 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:24:32,665 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:24:32,666 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 07:24:32,667 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-29 07:24:33,350 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 07:24:33,351 - conn_manager - INFO - Connection [CN00003 N/A => server1:8002] is created: PID: 1
+2025-07-29 07:24:34,727 - Authenticator - INFO - verified server identity 'server1'
+2025-07-29 07:24:34,755 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-29 07:24:34,756 - FederatedClient - INFO - Successfully registered client:site-2 for project single-node. Token:9216a088-5e08-45d3-8166-c0fa8d87106e SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-29 07:24:34,757 - FederatedClient - INFO - Got engine after 2.4207098484039307 seconds
+2025-07-29 07:24:34,757 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 07:24:57,545 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-29 07:24:57,554 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 64
+2025-07-29 07:24:57,555 - JobExecutor - INFO - Launched job 129919e0-1353-4a08-9e27-1f6523565191 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-29 07:24:57,556 - JobExecutor - INFO - run (129919e0-1353-4a08-9e27-1f6523565191): waiting for child worker process to finish.
+2025-07-29 07:24:58,739 - conn_manager - INFO - Connection [CN00004 127.0.0.1:17868 <= 127.0.0.1:55668] is created: PID: 1
+2025-07-29 07:27:41,497 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-29 07:27:43,865 - JobExecutor - INFO - run (129919e0-1353-4a08-9e27-1f6523565191): child worker process finished with RC 0
+2025-07-29 07:35:41,113 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-29 07:35:41,117 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:36277] is starting
+2025-07-29 07:35:41,621 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:36277
+2025-07-29 07:35:41,623 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-29 07:35:41,626 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 07:35:41,628 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 07:35:41,629 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-29 07:35:41,638 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 07:35:41,639 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-29 07:35:41,956 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:35:41,957 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:35:41,959 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:35:41,961 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 07:35:42,026 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-29 07:35:44,032 - Authenticator - INFO - verified server identity 'server1'
+2025-07-29 07:35:44,067 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-29 07:35:44,067 - FederatedClient - INFO - Successfully registered client:site-2 for project single-node. Token:60d642d1-2358-4ca5-93f8-6da4db953290 SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-29 07:35:44,069 - FederatedClient - INFO - Got engine after 2.4399735927581787 seconds
+2025-07-29 07:35:44,070 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 07:35:55,783 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-29 07:35:55,789 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 46
+2025-07-29 07:35:55,792 - JobExecutor - INFO - Launched job eaf7e6db-fb97-444e-b44d-be2adc4a0dd4 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-29 07:35:55,793 - JobExecutor - INFO - run (eaf7e6db-fb97-444e-b44d-be2adc4a0dd4): waiting for child worker process to finish.
+2025-07-29 07:35:56,935 - conn_manager - INFO - Connection [CN00003 127.0.0.1:36277 <= 127.0.0.1:39202] is created: PID: 1
+2025-07-29 07:36:11,747 - JobExecutor - INFO - run (eaf7e6db-fb97-444e-b44d-be2adc4a0dd4): child worker process terminated
+2025-07-29 07:36:11,750 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-29 07:36:11,757 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-29 07:36:11,757 - JobExecutor - INFO - run (eaf7e6db-fb97-444e-b44d-be2adc4a0dd4): child worker process finished with RC 1
+2025-07-29 07:36:11,763 - JobExecutor - INFO - run (eaf7e6db-fb97-444e-b44d-be2adc4a0dd4): child worker process terminated
+2025-07-29 07:36:11,764 - JobExecutor - INFO - Client worker process is terminated.
+2025-07-29 07:53:40,767 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-29 07:53:40,770 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:15626] is starting
+2025-07-29 07:53:41,272 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:15626
+2025-07-29 07:53:41,276 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-29 07:53:41,283 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 07:53:41,284 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 07:53:41,284 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-29 07:53:41,292 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 07:53:41,294 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-29 07:53:41,607 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:53:41,609 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:53:41,610 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:53:41,612 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 07:53:41,655 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-29 07:53:43,669 - Authenticator - INFO - verified server identity 'server1'
+2025-07-29 07:53:43,709 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-29 07:53:43,710 - FederatedClient - INFO - Successfully registered client:site-2 for project single-node. Token:4a48ea63-8099-45b8-9f7e-c0627d807317 SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-29 07:53:43,717 - FederatedClient - INFO - Got engine after 2.4322798252105713 seconds
+2025-07-29 07:53:43,717 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002

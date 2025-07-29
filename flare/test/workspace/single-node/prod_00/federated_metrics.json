@@ -1,0 +1,238 @@
+{
+  "client_metrics": {
+    "site-1": [
+      {
+        "round": 1,
+        "train_loss": 0.7183,
+        "test_loss": 0.5303,
+        "accuracy": 79.17,
+        "num_samples": 9600
+      },
+      {
+        "round": 2,
+        "train_loss": 0.4679,
+        "test_loss": 0.4435,
+        "accuracy": 83.17,
+        "num_samples": 9600
+      },
+      {
+        "round": 3,
+        "train_loss": 0.3912,
+        "test_loss": 0.4199,
+        "accuracy": 84.58,
+        "num_samples": 9600
+      },
+      {
+        "round": 4,
+        "train_loss": 0.3449,
+        "test_loss": 0.4022,
+        "accuracy": 85.58,
+        "num_samples": 9600
+      },
+      {
+        "round": 5,
+        "train_loss": 0.314,
+        "test_loss": 0.4052,
+        "accuracy": 86.04,
+        "num_samples": 9600
+      },
+      {
+        "round": 6,
+        "train_loss": 0.2877,
+        "test_loss": 0.4055,
+        "accuracy": 86.0,
+        "num_samples": 9600
+      },
+      {
+        "round": 7,
+        "train_loss": 0.2675,
+        "test_loss": 0.4114,
+        "accuracy": 86.21,
+        "num_samples": 9600
+      },
+      {
+        "round": 8,
+        "train_loss": 0.2485,
+        "test_loss": 0.4166,
+        "accuracy": 86.46,
+        "num_samples": 9600
+      },
+      {
+        "round": 9,
+        "train_loss": 0.2311,
+        "test_loss": 0.419,
+        "accuracy": 86.79,
+        "num_samples": 9600
+      },
+      {
+        "round": 10,
+        "train_loss": 0.2147,
+        "test_loss": 0.4215,
+        "accuracy": 86.62,
+        "num_samples": 9600
+      }
+    ],
+    "site-2": [
+      {
+        "round": 1,
+        "train_loss": 0.7292,
+        "test_loss": 0.5476,
+        "accuracy": 78.58,
+        "num_samples": 9600
+      },
+      {
+        "round": 2,
+        "train_loss": 0.4771,
+        "test_loss": 0.4693,
+        "accuracy": 83.21,
+        "num_samples": 9600
+      },
+      {
+        "round": 3,
+        "train_loss": 0.3978,
+        "test_loss": 0.418,
+        "accuracy": 85.21,
+        "num_samples": 9600
+      },
+      {
+        "round": 4,
+        "train_loss": 0.3548,
+        "test_loss": 0.3981,
+        "accuracy": 86.29,
+        "num_samples": 9600
+      },
+      {
+        "round": 5,
+        "train_loss": 0.325,
+        "test_loss": 0.3863,
+        "accuracy": 87.0,
+        "num_samples": 9600
+      },
+      {
+        "round": 6,
+        "train_loss": 0.299,
+        "test_loss": 0.3787,
+        "accuracy": 87.0,
+        "num_samples": 9600
+      },
+      {
+        "round": 7,
+        "train_loss": 0.2786,
+        "test_loss": 0.3875,
+        "accuracy": 86.42,
+        "num_samples": 9600
+      },
+      {
+        "round": 8,
+        "train_loss": 0.2576,
+        "test_loss": 0.4019,
+        "accuracy": 85.92,
+        "num_samples": 9600
+      },
+      {
+        "round": 9,
+        "train_loss": 0.2405,
+        "test_loss": 0.3959,
+        "accuracy": 86.29,
+        "num_samples": 9600
+      },
+      {
+        "round": 10,
+        "train_loss": 0.2225,
+        "test_loss": 0.4062,
+        "accuracy": 86.29,
+        "num_samples": 9600
+      }
+    ]
+  },
+  "fedavg_metrics": [
+    {
+      "round": 1,
+      "train_loss": 0.72375,
+      "test_loss": 0.53895,
+      "accuracy": 78.875,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 2,
+      "train_loss": 0.4725,
+      "test_loss": 0.45640000000000003,
+      "accuracy": 83.19,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 3,
+      "train_loss": 0.39449999999999996,
+      "test_loss": 0.41895,
+      "accuracy": 84.895,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 4,
+      "train_loss": 0.34985,
+      "test_loss": 0.40015,
+      "accuracy": 85.935,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 5,
+      "train_loss": 0.3195,
+      "test_loss": 0.39575,
+      "accuracy": 86.52,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 6,
+      "train_loss": 0.29335,
+      "test_loss": 0.3921,
+      "accuracy": 86.5,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 7,
+      "train_loss": 0.27304999999999996,
+      "test_loss": 0.39945,
+      "accuracy": 86.315,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 8,
+      "train_loss": 0.25305,
+      "test_loss": 0.40925,
+      "accuracy": 86.19,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 9,
+      "train_loss": 0.23579999999999998,
+      "test_loss": 0.4074499999999999,
+      "accuracy": 86.54,
+      "total_samples": 19200,
+      "num_clients": 2
+    },
+    {
+      "round": 10,
+      "train_loss": 0.2186,
+      "test_loss": 0.41385,
+      "accuracy": 86.455,
+      "total_samples": 19200,
+      "num_clients": 2
+    }
+  ],
+  "metadata": {
+    "num_clients": 2,
+    "num_rounds": 10,
+    "clients": [
+      "site-1",
+      "site-2"
+    ]
+  }
+}

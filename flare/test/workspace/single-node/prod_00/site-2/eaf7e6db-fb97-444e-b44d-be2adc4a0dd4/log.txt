@@ -1,0 +1,33 @@
+2025-07-29 07:35:56,076 - worker_process - INFO - Worker_process started.
+2025-07-29 07:35:56,826 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 07:35:56,826 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 07:35:56,827 - AuxRunner - INFO - registered aux handler for topic __end_run__
+2025-07-29 07:35:56,828 - AuxRunner - INFO - registered aux handler for topic __do_task__
+2025-07-29 07:35:56,932 - CoreCell - INFO - site-2.eaf7e6db-fb97-444e-b44d-be2adc4a0dd4: created backbone internal connector to tcp://localhost:36277 on parent
+2025-07-29 07:35:56,933 - CoreCell - INFO - site-2.eaf7e6db-fb97-444e-b44d-be2adc4a0dd4: created backbone external connector to grpc://server1:8002
+2025-07-29 07:35:56,933 - conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:36277] is starting
+2025-07-29 07:35:56,934 - conn_manager - INFO - Connector [CH00002 ACTIVE grpc://server1:8002] is starting
+2025-07-29 07:35:56,934 - conn_manager - INFO - Connection [CN00003 127.0.0.1:39202 => 127.0.0.1:36277] is created: PID: 46
+2025-07-29 07:35:56,935 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 07:35:56,936 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 07:35:56,936 - FederatedClient - INFO - Wait for client_runner to be created.
+2025-07-29 07:35:56,937 - FederatedClient - INFO - Got client_runner after 0.0004017353057861328 seconds
+2025-07-29 07:35:56,938 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 07:35:56,939 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 07:35:56,940 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 07:35:56,941 - conn_manager - INFO - Connection [CN00004 N/A => server1:8002] is created: PID: 46
+2025-07-29 07:35:56,944 - ClientAppRunner - INFO - notified status 2 to site-2 in 0.0032219886779785156 seconds after 1 tries
+2025-07-29 07:35:56,945 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2025-07-29 07:35:56,945 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2025-07-29 07:35:56,945 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2025-07-29 07:35:57,450 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:35:57,966 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:35:58,485 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:35:59,006 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:35:59,520 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:36:01,712 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - Received command to abort job
+2025-07-29 07:36:02,024 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:36:04,545 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:36:05,108 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - Received command to abort job
+2025-07-29 07:36:07,056 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...
+2025-07-29 07:36:09,561 - ClientRunner - INFO - [identity=site-2, run=eaf7e6db-fb97-444e-b44d-be2adc4a0dd4] - syncing to parent server ...

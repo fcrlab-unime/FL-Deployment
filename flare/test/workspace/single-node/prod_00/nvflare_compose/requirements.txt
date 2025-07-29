@@ -1,0 +1,6 @@
+setuptools
+torch
+torchvision
+torchaudio
+nvflare
+datasets==3.1.0

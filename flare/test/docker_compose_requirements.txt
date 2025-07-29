@@ -1,0 +1,5 @@
+setuptools
+torch
+torchvision
+torchaudio
+nvflare

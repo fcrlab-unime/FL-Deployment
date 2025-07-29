@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "server": {
+    "heart_beat_timeout": 60
+  },
+  "task": {
+    "name": "train"
+  },
+  "components": [
+    {
+      "id": "persistor",
+      "path": "nvflare.app_opt.pt.file_model_persistor.PTFileModelPersistor",
+      "args": {
+        "model_dir": "models"
+      }
+    },
+    {
+      "id": "aggregator",
+      "path": "nvflare.app_common.aggregators.weighted_aggregator.WeightedAggregator"
+    },
+    {
+      "id": "controller",
+      "path": "nvflare.app_common.controllers.fed_avg_controller.FedAvgController",
+      "args": {
+        "trainer_id": "trainer",
+        "num_rounds": 5,
+        "start_round": 0
+      }
+    }
+  ]
+}
