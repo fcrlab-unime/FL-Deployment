@@ -1,0 +1,44 @@
+{
+    "name": "fashion_mnist_cnn",
+    "resource_spec": {},
+    "min_clients": 5,
+    "deploy_map": {
+        "app": [
+            "@ALL"
+        ]
+    },
+    "byoc": true,
+    "submitter_name": "admin@nvidia.com",
+    "submitter_org": "nvidia",
+    "submitter_role": "project_admin",
+    "job_folder_name": "fashion_mnist_cnn",
+    "job_id": "6070011f-66b0-4759-83db-4485e99975c3",
+    "submit_time": 1753803579.0781128,
+    "submit_time_iso": "2025-07-29T15:39:39.078113+00:00",
+    "start_time": "",
+    "duration": "N/A",
+    "data_storage_format": 2,
+    "status": "SUBMITTED",
+    "schedule_history": [
+        "2025-07-29 15:39:39: scheduled"
+    ],
+    "schedule_count": 1,
+    "last_schedule_time": 1753803579.1272173,
+    "job_clients": [
+        {
+            "name": "site-3"
+        },
+        {
+            "name": "site-1"
+        },
+        {
+            "name": "site-5"
+        },
+        {
+            "name": "site-2"
+        },
+        {
+            "name": "site-4"
+        }
+    ]
+}

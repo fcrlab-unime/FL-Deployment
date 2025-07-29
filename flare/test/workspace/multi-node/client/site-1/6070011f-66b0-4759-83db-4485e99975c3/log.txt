@@ -1,0 +1,250 @@
+2025-07-29 15:39:39,549 - worker_process - INFO - Worker_process started.
+2025-07-29 15:39:40,510 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 15:39:40,510 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 15:39:40,511 - AuxRunner - INFO - registered aux handler for topic __end_run__
+2025-07-29 15:39:40,511 - AuxRunner - INFO - registered aux handler for topic __do_task__
+2025-07-29 15:39:40,627 - CoreCell - INFO - site-1.6070011f-66b0-4759-83db-4485e99975c3: created backbone internal connector to tcp://localhost:64823 on parent
+2025-07-29 15:39:40,628 - CoreCell - INFO - site-1.6070011f-66b0-4759-83db-4485e99975c3: created backbone external connector to grpc://server1:8002
+2025-07-29 15:39:40,628 - conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:64823] is starting
+2025-07-29 15:39:40,629 - conn_manager - INFO - Connector [CH00002 ACTIVE grpc://server1:8002] is starting
+2025-07-29 15:39:40,629 - conn_manager - INFO - Connection [CN00003 127.0.0.1:60876 => 127.0.0.1:64823] is created: PID: 46
+2025-07-29 15:39:40,630 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 15:39:40,632 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 15:39:40,633 - FederatedClient - INFO - Wait for client_runner to be created.
+2025-07-29 15:39:40,634 - FederatedClient - INFO - Got client_runner after 0.001032114028930664 seconds
+2025-07-29 15:39:40,635 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 15:39:40,639 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 15:39:40,640 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:39:40,642 - conn_manager - INFO - Connection [CN00004 N/A => server1:8002] is created: PID: 46
+2025-07-29 15:39:40,646 - ClientAppRunner - INFO - notified status 2 to site-1 in 0.004337310791015625 seconds after 1 tries
+2025-07-29 15:39:40,646 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2025-07-29 15:39:40,647 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2025-07-29 15:39:40,648 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2025-07-29 15:39:41,150 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - syncing to parent server ...
+2025-07-29 15:39:41,674 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - syncing to parent server ...
+2025-07-29 15:39:41,688 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - synced to parent server in 1.0388755798339844 seconds
+2025-07-29 15:39:41,689 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
+2025-07-29 15:39:41,689 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
+2025-07-29 15:39:41,690 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
+2025-07-29 15:39:41,691 - CoreCell - INFO - site-1_6070011f-66b0-4759-83db-4485e99975c3_passive: created backbone external connector to grpc://server1:8002
+2025-07-29 15:39:41,692 - conn_manager - INFO - Connector [CH00003 ACTIVE grpc://server1:8002] is starting
+2025-07-29 15:39:41,693 - Cell - INFO - Register blob CB for channel='cell_pipe.metric', topic='*'
+2025-07-29 15:39:41,693 - CellPipe - INFO - registered CellPipe request CB for cell_pipe.metric
+2025-07-29 15:39:41,695 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:39:41,696 - Cell - INFO - Register blob CB for channel='cell_pipe.task', topic='*'
+2025-07-29 15:39:41,696 - conn_manager - INFO - Connection [CN00005 N/A => server1:8002] is created: PID: 46
+2025-07-29 15:39:41,696 - CellPipe - INFO - registered CellPipe request CB for cell_pipe.task
+2025-07-29 15:39:41,701 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 15:39:41,701 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - client runner started
+2025-07-29 15:39:41,759 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.055316 seconds
+2025-07-29 15:39:41,759 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:39:41,760 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=f33d128a-17f7-4852-bab0-5b4724f62a06
+2025-07-29 15:39:41,766 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:39:41,767 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - execute for task (train)
+2025-07-29 15:39:41,773 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - Launcher successfully launched task (train).
+2025-07-29 15:39:44,575 - SubprocessLauncher - INFO - Starting training on site: site-1
+2025-07-29 15:39:44,595 - SubprocessLauncher - INFO - Using device: cpu
+2025-07-29 15:39:44,601 - SubprocessLauncher - INFO - Loading data from: /data/5_partitions/fashion_mnist_part_1
+2025-07-29 15:39:44,693 - SubprocessLauncher - INFO - Training samples: 9600
+2025-07-29 15:39:44,695 - SubprocessLauncher - INFO - Test samples: 2400
+2025-07-29 15:39:49,775 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - External setup for task (train) succeeded.
+2025-07-29 15:39:49,782 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:39:49,815 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - task train sent to peer in 0.03255438804626465 secs
+2025-07-29 15:39:50,206 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:39:50,207 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:39:50,208 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:39:50,262 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 2.302617
+2025-07-29 15:39:54,745 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.858647
+2025-07-29 15:39:59,554 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.699551
+2025-07-29 15:40:05,856 - SubprocessLauncher - INFO - Test Loss: 0.6398, Accuracy: 76.96%
+2025-07-29 15:40:05,876 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.7592, Test accuracy: 76.96%
+2025-07-29 15:40:06,348 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - got result 'Message(topic=train, msg_id=0b966f35-baba-42dc-a677-a576060087e5, req_id=f33d128a-17f7-4852-bab0-5b4724f62a06, msg_type=REP)' for task 'train'
+2025-07-29 15:40:06,349 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - received result of train from peer in 16.53361225128174 secs
+2025-07-29 15:40:06,350 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - Calling stop task (train).
+2025-07-29 15:40:06,352 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - finished processing task
+2025-07-29 15:40:06,352 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - try #1: sending task result to server
+2025-07-29 15:40:06,353 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - checking task with server ...
+2025-07-29 15:40:06,361 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - start to send task result to server
+2025-07-29 15:40:06,361 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:40:06,431 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.069274 seconds
+2025-07-29 15:40:06,431 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=f33d128a-17f7-4852-bab0-5b4724f62a06] - task result sent to server
+2025-07-29 15:40:08,456 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.021445 seconds
+2025-07-29 15:40:08,457 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:40:08,457 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=92a4a360-8e9b-4b17-94b9-7ced9f250271
+2025-07-29 15:40:08,458 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:40:08,458 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - execute for task (train)
+2025-07-29 15:40:08,459 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - Launcher successfully launched task (train).
+2025-07-29 15:40:09,874 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - External setup for task (train) succeeded.
+2025-07-29 15:40:09,875 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:40:09,892 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - task train sent to peer in 0.016314983367919922 secs
+2025-07-29 15:40:10,389 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:40:10,390 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:40:10,390 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:40:10,421 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 1.593413
+2025-07-29 15:40:15,055 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.655598
+2025-07-29 15:40:19,982 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.549140
+2025-07-29 15:40:26,113 - SubprocessLauncher - INFO - Test Loss: 0.5979, Accuracy: 78.54%
+2025-07-29 15:40:26,119 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.6110, Test accuracy: 78.54%
+2025-07-29 15:40:26,434 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - got result 'Message(topic=train, msg_id=575811af-7381-47c0-80b9-1f8a62b59b62, req_id=92a4a360-8e9b-4b17-94b9-7ced9f250271, msg_type=REP)' for task 'train'
+2025-07-29 15:40:26,435 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - received result of train from peer in 16.542214155197144 secs
+2025-07-29 15:40:26,436 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - Calling stop task (train).
+2025-07-29 15:40:26,436 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - finished processing task
+2025-07-29 15:40:26,437 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - try #1: sending task result to server
+2025-07-29 15:40:26,437 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - checking task with server ...
+2025-07-29 15:40:26,442 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - start to send task result to server
+2025-07-29 15:40:26,442 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:40:26,537 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.094917 seconds
+2025-07-29 15:40:26,538 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=92a4a360-8e9b-4b17-94b9-7ced9f250271] - task result sent to server
+2025-07-29 15:40:28,576 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.034585 seconds
+2025-07-29 15:40:28,576 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:40:28,577 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=45172026-dca6-42d4-93ef-5a825c82c8f8
+2025-07-29 15:40:28,578 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:40:28,579 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - execute for task (train)
+2025-07-29 15:40:28,580 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - Launcher successfully launched task (train).
+2025-07-29 15:40:29,895 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - External setup for task (train) succeeded.
+2025-07-29 15:40:29,898 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:40:29,922 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - task train sent to peer in 0.02330636978149414 secs
+2025-07-29 15:40:30,128 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:40:30,129 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:40:30,129 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:40:30,144 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 0.343476
+2025-07-29 15:40:34,246 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.609450
+2025-07-29 15:40:38,990 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.596436
+2025-07-29 15:40:45,091 - SubprocessLauncher - INFO - Test Loss: 0.6395, Accuracy: 79.75%
+2025-07-29 15:40:45,108 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.5595, Test accuracy: 79.75%
+2025-07-29 15:40:45,452 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - got result 'Message(topic=train, msg_id=457e99c3-6148-4201-9124-fa1c29f48811, req_id=45172026-dca6-42d4-93ef-5a825c82c8f8, msg_type=REP)' for task 'train'
+2025-07-29 15:40:45,453 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - received result of train from peer in 15.530277729034424 secs
+2025-07-29 15:40:45,454 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - Calling stop task (train).
+2025-07-29 15:40:45,455 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - finished processing task
+2025-07-29 15:40:45,457 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - try #1: sending task result to server
+2025-07-29 15:40:45,457 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - checking task with server ...
+2025-07-29 15:40:45,469 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - start to send task result to server
+2025-07-29 15:40:45,469 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:40:45,635 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.164958 seconds
+2025-07-29 15:40:45,635 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45172026-dca6-42d4-93ef-5a825c82c8f8] - task result sent to server
+2025-07-29 15:40:47,657 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.018280 seconds
+2025-07-29 15:40:47,658 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:40:47,659 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=4e6725e9-7fe1-4eec-b655-7916df2f95d4
+2025-07-29 15:40:47,660 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:40:47,661 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - execute for task (train)
+2025-07-29 15:40:47,662 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - Launcher successfully launched task (train).
+2025-07-29 15:40:49,985 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - External setup for task (train) succeeded.
+2025-07-29 15:40:49,987 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:40:49,998 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - task train sent to peer in 0.010091543197631836 secs
+2025-07-29 15:40:50,119 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:40:50,119 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:40:50,120 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:40:50,136 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 0.231956
+2025-07-29 15:40:54,211 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.398505
+2025-07-29 15:40:58,797 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.395405
+2025-07-29 15:41:04,968 - SubprocessLauncher - INFO - Test Loss: 0.5820, Accuracy: 82.62%
+2025-07-29 15:41:04,975 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.5043, Test accuracy: 82.62%
+2025-07-29 15:41:05,533 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - got result 'Message(topic=train, msg_id=e65d2ba0-7811-49a0-9eab-9884f23373df, req_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4, msg_type=REP)' for task 'train'
+2025-07-29 15:41:05,535 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - received result of train from peer in 15.536152839660645 secs
+2025-07-29 15:41:05,536 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - Calling stop task (train).
+2025-07-29 15:41:05,536 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - finished processing task
+2025-07-29 15:41:05,538 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - try #1: sending task result to server
+2025-07-29 15:41:05,539 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - checking task with server ...
+2025-07-29 15:41:05,544 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - start to send task result to server
+2025-07-29 15:41:05,545 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:41:05,623 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.077210 seconds
+2025-07-29 15:41:05,623 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=4e6725e9-7fe1-4eec-b655-7916df2f95d4] - task result sent to server
+2025-07-29 15:41:07,641 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.015101 seconds
+2025-07-29 15:41:07,642 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:41:07,643 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2
+2025-07-29 15:41:07,644 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:41:07,644 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - execute for task (train)
+2025-07-29 15:41:07,645 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - Launcher successfully launched task (train).
+2025-07-29 15:41:09,969 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - External setup for task (train) succeeded.
+2025-07-29 15:41:09,972 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:41:10,001 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - task train sent to peer in 0.0270998477935791 secs
+2025-07-29 15:41:10,484 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:41:10,486 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:41:10,487 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:41:10,544 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 0.179660
+2025-07-29 15:41:15,483 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.538537
+2025-07-29 15:41:20,452 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.437970
+2025-07-29 15:41:26,772 - SubprocessLauncher - INFO - Test Loss: 0.4555, Accuracy: 84.62%
+2025-07-29 15:41:26,790 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.4802, Test accuracy: 84.62%
+2025-07-29 15:41:27,034 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - got result 'Message(topic=train, msg_id=76b6d97f-9211-44a1-80cb-890c07334804, req_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2, msg_type=REP)' for task 'train'
+2025-07-29 15:41:27,035 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - received result of train from peer in 17.03333830833435 secs
+2025-07-29 15:41:27,036 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - Calling stop task (train).
+2025-07-29 15:41:27,037 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - finished processing task
+2025-07-29 15:41:27,038 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - try #1: sending task result to server
+2025-07-29 15:41:27,038 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - checking task with server ...
+2025-07-29 15:41:27,054 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - start to send task result to server
+2025-07-29 15:41:27,055 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:41:27,146 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.086874 seconds
+2025-07-29 15:41:27,146 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=20d10a3d-fe97-4fa6-8b71-09c8efb8c0e2] - task result sent to server
+2025-07-29 15:41:29,159 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.010171 seconds
+2025-07-29 15:41:29,160 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:41:29,161 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=6a4456a9-ff14-4370-a831-840e81680afc
+2025-07-29 15:41:29,161 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:41:29,162 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - execute for task (train)
+2025-07-29 15:41:29,162 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - Launcher successfully launched task (train).
+2025-07-29 15:41:30,075 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - External setup for task (train) succeeded.
+2025-07-29 15:41:30,079 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:41:30,097 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - task train sent to peer in 0.015960693359375 secs
+2025-07-29 15:41:30,298 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:41:30,299 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:41:30,299 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:41:30,325 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 0.166149
+2025-07-29 15:41:35,018 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.364562
+2025-07-29 15:41:39,815 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.444266
+2025-07-29 15:41:45,990 - SubprocessLauncher - INFO - Test Loss: 0.5559, Accuracy: 80.96%
+2025-07-29 15:41:45,999 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.4880, Test accuracy: 80.96%
+2025-07-29 15:41:46,130 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - got result 'Message(topic=train, msg_id=881d6cce-54b9-497c-b997-2f28e6073f4c, req_id=6a4456a9-ff14-4370-a831-840e81680afc, msg_type=REP)' for task 'train'
+2025-07-29 15:41:46,131 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - received result of train from peer in 16.033289194107056 secs
+2025-07-29 15:41:46,132 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - Calling stop task (train).
+2025-07-29 15:41:46,133 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - finished processing task
+2025-07-29 15:41:46,135 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - try #1: sending task result to server
+2025-07-29 15:41:46,136 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - checking task with server ...
+2025-07-29 15:41:46,177 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - start to send task result to server
+2025-07-29 15:41:46,178 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:41:46,299 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.117180 seconds
+2025-07-29 15:41:46,300 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=6a4456a9-ff14-4370-a831-840e81680afc] - task result sent to server
+2025-07-29 15:41:48,325 - Communicator - INFO - Received from server. getTask: train size: 181.2KB (181226 Bytes) time: 0.023008 seconds
+2025-07-29 15:41:48,326 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-07-29 15:41:48,327 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3] - got task assignment: name=train, id=45469c04-7875-496f-b762-7bc477f9a518
+2025-07-29 15:41:48,327 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - invoking task executor PTClientAPILauncherExecutor
+2025-07-29 15:41:48,328 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - execute for task (train)
+2025-07-29 15:41:48,329 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - Launcher successfully launched task (train).
+2025-07-29 15:41:50,046 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - External setup for task (train) succeeded.
+2025-07-29 15:41:50,051 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - sending task to peer self.peer_read_timeout=60.0
+2025-07-29 15:41:50,065 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - task train sent to peer in 0.012837886810302734 secs
+2025-07-29 15:41:50,507 - SubprocessLauncher - INFO - Received global model from server
+2025-07-29 15:41:50,508 - SubprocessLauncher - INFO - Updated local model with global parameters
+2025-07-29 15:41:50,508 - SubprocessLauncher - INFO - Starting local training...
+2025-07-29 15:41:50,561 - SubprocessLauncher - INFO - Epoch 1/1, Batch 0, Loss: 0.185203
+2025-07-29 15:41:55,343 - SubprocessLauncher - INFO - Epoch 1/1, Batch 100, Loss: 0.448980
+2025-07-29 15:42:00,104 - SubprocessLauncher - INFO - Epoch 1/1, Batch 200, Loss: 0.691266
+2025-07-29 15:42:06,258 - SubprocessLauncher - INFO - Test Loss: 0.5850, Accuracy: 81.21%
+2025-07-29 15:42:06,269 - SubprocessLauncher - INFO - Sent model update to server. Train loss: 0.5034, Test accuracy: 81.21%
+2025-07-29 15:42:06,597 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - got result 'Message(topic=train, msg_id=5b0889ed-a191-496e-aba0-bfee872772fa, req_id=45469c04-7875-496f-b762-7bc477f9a518, msg_type=REP)' for task 'train'
+2025-07-29 15:42:06,598 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - received result of train from peer in 16.53188943862915 secs
+2025-07-29 15:42:06,599 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - Calling stop task (train).
+2025-07-29 15:42:06,600 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - finished processing task
+2025-07-29 15:42:06,601 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - try #1: sending task result to server
+2025-07-29 15:42:06,602 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - checking task with server ...
+2025-07-29 15:42:06,606 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - start to send task result to server
+2025-07-29 15:42:06,607 - FederatedClient - INFO - Starting to push execute result.
+2025-07-29 15:42:06,675 - Communicator - INFO - SubmitUpdate to: server. size: 181.4KB (181396 Bytes). time: 0.067861 seconds
+2025-07-29 15:42:06,675 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3, peer=provisioning, peer_run=6070011f-66b0-4759-83db-4485e99975c3, task_name=train, task_id=45469c04-7875-496f-b762-7bc477f9a518] - task result sent to server
+2025-07-29 15:42:07,998 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - Received command to abort job
+2025-07-29 15:42:08,678 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - started end-run events sequence
+2025-07-29 15:42:08,680 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - Stopping pipe handler
+2025-07-29 15:42:08,688 - MetricRelay - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - Stopping pipe handler
+2025-07-29 15:42:08,720 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 46
+2025-07-29 15:42:08,721 - GrpcDriver - INFO - CLIENT: finished connection [CN00005 Not Connected]
+2025-07-29 15:42:08,722 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - ABOUT_TO_END_RUN fired
+2025-07-29 15:42:08,723 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - Firing CHECK_END_RUN_READINESS ...
+2025-07-29 15:42:08,760 - PTClientAPILauncherExecutor - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - _end_run event received - telling external to stop
+2025-07-29 15:42:08,761 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - END_RUN fired
+2025-07-29 15:42:08,761 - ReliableMessage - INFO - ReliableMessage is shutdown
+2025-07-29 15:42:08,762 - ObjectStreamer - INFO - Stream Runer is Shut Down
+2025-07-29 15:42:08,767 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 46
+2025-07-29 15:42:08,767 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 46
+2025-07-29 15:42:08,768 - GrpcDriver - INFO - CLIENT: finished connection [CN00004 Not Connected]
+2025-07-29 15:42:08,769 - FederatedClient - INFO - Shutting down client run: site-1
+2025-07-29 15:42:09,730 - ClientRunner - INFO - [identity=site-1, run=6070011f-66b0-4759-83db-4485e99975c3] - Client is stopping ...
+2025-07-29 15:42:11,253 - MPM - INFO - MPM: Good Bye!

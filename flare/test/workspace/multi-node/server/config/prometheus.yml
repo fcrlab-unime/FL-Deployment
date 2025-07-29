@@ -9,12 +9,8 @@ scrape_configs:
     scrape_interval: 1s 
     metrics_path: '/metrics'
     static_configs:
-      - targets:
-          - 172.17.6.4:8080  # Client 1's cAdvisor
-          - 172.17.6.6:8080  # Client 2's cAdvisor
-          - 172.17.6.9:8080  # Client 2's cAdvisor
-          - 172.17.6.13:8080  # Client 2's cAdvisor
-          - 172.17.6.15:8080  # Client 2's cAdvisor
+      - targets: ["cadvisor:8080"]
+
   # - job_name: 'server_metrics'
   #   scrape_interval: 5s
   #   metrics_path: '/metrics'

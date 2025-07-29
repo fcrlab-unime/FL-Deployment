@@ -1,0 +1,5 @@
+[E:3a6d3cb6-04f9-42fd-b425-addfa1bea723][T:2025-07-29 15:39:39.146277][U:admin@nvidia.com][A:train.deploy]
+[E:1bb82d05-9a9b-447a-b796-79bd0c2980e3][T:2025-07-29 15:39:39.202060][U:][A:train.start_job]
+[E:0e4a8b37-3234-42be-99f2-fbe5e14f5b51][T:2025-07-29 15:39:40.653595][U:][A:train.notify_job_status]
+[E:6d222454-feeb-440e-9ce7-301f8541725a][T:2025-07-29 15:42:07.994692][U:][A:train.abort]
+[E:5eeb1a80-13d5-498d-abf0-c6fef2cb360c][T:2025-07-29 15:42:08.989057][U:][A:train.notify_job_status]

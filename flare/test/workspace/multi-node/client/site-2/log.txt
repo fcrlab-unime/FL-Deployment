@@ -1,0 +1,75 @@
+2025-07-29 15:34:11,608 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-29 15:34:11,609 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:18841] is starting
+2025-07-29 15:34:12,114 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:18841
+2025-07-29 15:34:12,119 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-29 15:34:12,121 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 15:34:12,122 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 15:34:12,123 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-29 15:34:12,132 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:34:12,133 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-29 15:34:12,466 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 15:34:12,469 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 15:34:12,471 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 15:34:12,475 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 15:34:12,619 - Authenticator - INFO - verified server identity 'server1'
+2025-07-29 15:34:12,652 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-29 15:34:12,653 - FederatedClient - INFO - Successfully registered client:site-2 for project provisioning. Token:7a15db2f-81f3-4962-a5fc-b1207ba8a573 SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-29 15:34:12,657 - FederatedClient - INFO - Got engine after 0.5336449146270752 seconds
+2025-07-29 15:34:12,657 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 15:35:44,617 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-29 15:35:44,618 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:46789] is starting
+2025-07-29 15:35:45,121 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:46789
+2025-07-29 15:35:45,122 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-29 15:35:45,127 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 15:35:45,128 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 15:35:45,130 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-29 15:35:45,138 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:35:45,139 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-29 15:35:45,145 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-29 15:35:45,146 - GrpcDriver - INFO - CLIENT: finished connection [CN00002 Not Connected]
+2025-07-29 15:35:45,485 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 15:35:45,486 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 15:35:45,486 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 15:35:45,487 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 15:35:45,489 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-29 15:35:46,150 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:35:46,152 - conn_manager - INFO - Connection [CN00003 N/A => server1:8002] is created: PID: 1
+2025-07-29 15:35:46,156 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-29 15:35:46,159 - GrpcDriver - INFO - CLIENT: finished connection [CN00003 Not Connected]
+2025-07-29 15:35:47,491 - Authenticator - INFO - re-challenge after 2.0 seconds
+2025-07-29 15:35:48,168 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:35:48,171 - conn_manager - INFO - Connection [CN00004 N/A => server1:8002] is created: PID: 1
+2025-07-29 15:35:49,592 - Authenticator - INFO - verified server identity 'server1'
+2025-07-29 15:35:49,627 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-29 15:35:49,628 - FederatedClient - INFO - Successfully registered client:site-2 for project provisioning. Token:8777fb59-af2e-4c7c-8b88-6b0cfb100cda SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-29 15:35:49,629 - FederatedClient - INFO - Got engine after 4.499181747436523 seconds
+2025-07-29 15:35:49,630 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 15:37:45,291 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-29 15:37:45,294 - GrpcDriver - INFO - CLIENT: finished connection [CN00004 Not Connected]
+2025-07-29 15:39:16,946 - CoreCell - INFO - site-2: created backbone external connector to grpc://server1:8002
+2025-07-29 15:39:16,948 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:33447] is starting
+2025-07-29 15:39:17,449 - CoreCell - INFO - site-2: created backbone internal listener for tcp://localhost:33447
+2025-07-29 15:39:17,454 - conn_manager - INFO - Connector [CH00001 ACTIVE grpc://server1:8002] is starting
+2025-07-29 15:39:17,460 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-07-29 15:39:17,461 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-07-29 15:39:17,462 - FederatedClient - INFO - Wait for engine to be created.
+2025-07-29 15:39:17,468 - GrpcDriver - INFO - created secure channel at server1:8002
+2025-07-29 15:39:17,469 - conn_manager - INFO - Connection [CN00002 N/A => server1:8002] is created: PID: 1
+2025-07-29 15:39:17,810 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 15:39:17,812 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 15:39:17,813 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 15:39:17,814 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 15:39:17,909 - Authenticator - INFO - verified server identity 'server1'
+2025-07-29 15:39:17,941 - Authenticator - INFO - Verified received token and signature successfully
+2025-07-29 15:39:17,942 - FederatedClient - INFO - Successfully registered client:site-2 for project provisioning. Token:c09dc8de-fd42-498c-9fde-864c93e0ea8b SSID:ebc6125d-0a56-4688-9b08-355fe9e4d61a
+2025-07-29 15:39:17,946 - FederatedClient - INFO - Got engine after 0.48356008529663086 seconds
+2025-07-29 15:39:17,946 - FederatedClient - INFO - Got the new primary SP: grpc://server1:8002
+2025-07-29 15:39:39,202 - ClientEngine - INFO - Starting client app. rank: 0
+2025-07-29 15:39:39,214 - ClientProcessJobLauncher - INFO - Launch the job in process ID: 46
+2025-07-29 15:39:39,218 - JobExecutor - INFO - Launched job 6070011f-66b0-4759-83db-4485e99975c3 with job launcher: <class 'nvflare.app_common.job_launcher.client_process_launcher.ClientProcessJobLauncher'> 
+2025-07-29 15:39:39,220 - JobExecutor - INFO - run (6070011f-66b0-4759-83db-4485e99975c3): waiting for child worker process to finish.
+2025-07-29 15:39:40,648 - conn_manager - INFO - Connection [CN00003 127.0.0.1:33447 <= 127.0.0.1:64162] is created: PID: 1
+2025-07-29 15:42:08,370 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-29 15:42:10,502 - JobExecutor - INFO - run (6070011f-66b0-4759-83db-4485e99975c3): child worker process finished with RC 0
+2025-07-29 15:42:10,538 - JobExecutor - INFO - run (6070011f-66b0-4759-83db-4485e99975c3): child worker process terminated
+2025-07-29 15:42:10,539 - JobExecutor - INFO - Client worker process is terminated.

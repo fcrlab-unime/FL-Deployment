@@ -1,0 +1,52 @@
+{
+  "METRICS_EXCHANGE": {
+    "pipe_channel_name": "metric",
+    "pipe": {
+      "CLASS_NAME": "nvflare.fuel.utils.pipe.cell_pipe.CellPipe",
+      "ARG": {
+        "mode": "ACTIVE",
+        "site_name": "site-4",
+        "token": "6070011f-66b0-4759-83db-4485e99975c3",
+        "root_url": "grpc://server1:8002",
+        "secure_mode": true,
+        "workspace_dir": "/workspace"
+      }
+    },
+    "HEARTBEAT_TIMEOUT": 60.0
+  },
+  "site_name": "site-4",
+  "job_id": "6070011f-66b0-4759-83db-4485e99975c3",
+  "auth_token": "86446fc2-0b6f-49f6-9f7a-b1cbdfbcc6a6",
+  "auth_token_signature": "DnD+xU+/RjDbzDQig5avIslm8ByKClcX0rdQqQkleO4uj0sOCEzRGTl/HCWxoj5zAYcgNw2dxG3iM3XQL/Mc+vfzrklXoO/JpQDU58UMJ6Uol0WpcVmYUD3apFOMTFn2ePRvTwpoGJTTQycY3ERavTdJPHZwCkWjwbyBM9ISEGkcWGYgrWyeRys16v++OHmPLEDvDASiwuFngKT3yL2Wk2479ut6CxoDS8EUOpAQubiMG/Ms9G3mxlgZVinAT3D1slaXdBHHfH22kZg8vOGDP1nEIGoDv2kKSUiHz7tafbuun0piMR+X60c7DCjNtu5CEVynEMw770Ia0WtG0PzJ2A==",
+  "root_conn_props": {
+    "fqcn": "server",
+    "url": "grpc://server1:8002",
+    "connection_security": null
+  },
+  "cp_conn_props": {
+    "fqcn": "site-4",
+    "url": "tcp://localhost:63127",
+    "connection_security": "clear"
+  },
+  "TASK_EXCHANGE": {
+    "train_with_eval": true,
+    "exchange_format": "pytorch",
+    "transfer_type": "DIFF",
+    "train_task_name": "train",
+    "eval_task_name": "validate",
+    "submit_model_task_name": "submit_model",
+    "pipe_channel_name": "task",
+    "pipe": {
+      "CLASS_NAME": "nvflare.fuel.utils.pipe.cell_pipe.CellPipe",
+      "ARG": {
+        "mode": "ACTIVE",
+        "site_name": "site-4",
+        "token": "6070011f-66b0-4759-83db-4485e99975c3",
+        "root_url": "grpc://server1:8002",
+        "secure_mode": true,
+        "workspace_dir": "/workspace"
+      }
+    },
+    "HEARTBEAT_TIMEOUT": 60
+  }
+}

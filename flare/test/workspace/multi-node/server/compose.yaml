@@ -1,0 +1,57 @@
+services:
+  server1:
+    build: nvflare_compose
+    network_mode: host
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.server.server_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_server.json
+    - --set
+    - secure_train=true
+    - config_folder=config
+    - org=nvidia
+    container_name: server1
+    image: ${IMAGE_NAME}
+    ports:
+    - 8002:8002
+    - 8003:8003
+    volumes:
+    - ./server1:${WORKSPACE}
+    - nvflare_svc_persist:/tmp/nvflare/
+    - ./admin@nvidia.com:${WORKSPACE}/admin@nvidia.com
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "9094:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ../config/grafana.ini:/etc/grafana/grafana.ini
+      - ../config/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ../config/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - prometheus
+    networks:
+      - default
+
+volumes:
+  nvflare_svc_persist: null
+  grafana-storage:
+  model-storage:
+  dataset-storage:
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
