@@ -183,8 +183,8 @@ def main():
         print("Starting local training...")
         train_loss = model.train_epoch(
             trainloader, 
-            epochs=1, 
-            learning_rate=0.01, 
+            epochs=2, 
+            learning_rate=0.001, 
             device=device
         )
         

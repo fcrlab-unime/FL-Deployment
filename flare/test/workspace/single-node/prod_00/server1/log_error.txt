@@ -15,3 +15,4 @@
   "min_clients": 2,
 }
 : JSONDecodeError: Expecting property name enclosed in double quotes: line 15 column 1 (char 245)
+2025-07-29 08:29:54,726 - CoreCell - ERROR - [ME=server O=? D=site-1 F=? T=? CH=admin TP=admin SCH=? STP=? SEQ=?] timeout on Request 89cfb03a-a817-4c78-977e-b5b1262c3b47 for ['admin'] after 20 secs

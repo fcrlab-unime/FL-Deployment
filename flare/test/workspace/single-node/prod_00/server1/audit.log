@@ -63,3 +63,7 @@
 [E:d744eaa9-0120-4cb6-b5b1-e84da71d9107][T:2025-07-29 07:24:57.209296][U:admin@nvidia.com][A:job_mgmt.submit_job fashion_mnist_cnn]
 [E:8feb1dfd-ee67-461d-9396-f6d954060478][T:2025-07-29 07:35:51.736456][U:?][A:_cert_login admin@nvidia.com]
 [E:456e5051-c176-4aee-862c-1c087e0295ff][T:2025-07-29 07:35:55.088774][U:admin@nvidia.com][A:job_mgmt.submit_job fashion_mnist_cnn]
+[E:6c9de46c-dc4f-46d0-a565-dcce6298a455][T:2025-07-29 08:29:20.297663][U:?][A:_cert_login admin@nvidia.com]
+[E:768e8c50-2991-41f5-8f72-1c74ab92c4de][T:2025-07-29 08:29:34.053685][U:admin@nvidia.com][A:job_mgmt.submit_job fashion_mnist_cnn]
+[E:327db3da-29e1-4ad1-8617-47ad228d00f8][T:2025-07-29 08:43:23.757140][U:admin@nvidia.com][A:list_jobs]
+[E:fe54ece6-f8f1-4e42-8800-e418d9f37eb6][T:2025-07-29 08:43:36.538944][U:admin@nvidia.com][A:get_job_meta 723ebdc0-1408-4ddf-a909-d239268c75b4]

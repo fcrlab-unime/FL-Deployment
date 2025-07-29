@@ -23,7 +23,7 @@ services:
     ports:
       - "9095:9090"
     volumes:
-      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ../config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     deploy:
@@ -31,8 +31,8 @@ services:
         condition: on-failure
     depends_on:
       - server1
-    # networks:
-    #   - default
+    networks:
+      - default
 
   grafana:
     image: grafana/grafana:latest
@@ -41,18 +41,16 @@ services:
       - "9094:3000"
     volumes:
       - grafana-storage:/var/lib/grafana
-      - ./config/grafana.ini:/etc/grafana/grafana.ini
-      - ./config/provisioning/datasources:/etc/grafana/provisioning/datasources
-      - ./config/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ../config/grafana.ini:/etc/grafana/grafana.ini
+      - ../config/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ../config/provisioning/dashboards:/etc/grafana/provisioning/dashboards
     deploy:
       restart_policy:
         condition: on-failure
     depends_on:
       - prometheus
-    # networks:
-    #   - default
-
-
+    networks:
+      - default
 
   server1:
     build: nvflare_compose

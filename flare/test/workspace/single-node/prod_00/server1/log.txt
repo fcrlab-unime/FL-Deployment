@@ -599,3 +599,185 @@
 2025-07-29 07:53:43,717 - ClientManager - INFO - identity verified for client 'site-1'
 2025-07-29 07:53:43,717 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
 2025-07-29 07:53:43,717 - ClientManager - INFO - Client: New client site-1@172.25.0.4 joined. Sent token: 25801a39-3365-424e-b664-77556fb12b03.  Total clients: 2
+2025-07-29 08:10:35,958 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 08:10:36,051 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 08:10:36,138 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 08:10:36,138 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:16639] is starting
+2025-07-29 08:10:36,639 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:16639
+2025-07-29 08:10:36,639 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 08:10:36,640 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 08:10:36,640 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 08:10:36,641 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 08:10:36,641 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 08:10:36,641 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 08:10:36,643 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 08:10:36,644 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 08:10:36,646 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 08:10:36,647 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 08:10:36,647 - root - INFO - Server started
+2025-07-29 08:10:36,705 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.5:33110 SSL site-2] is created: PID: 1
+2025-07-29 08:10:36,708 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.3:50334 SSL site-1] is created: PID: 1
+2025-07-29 08:10:37,141 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 08:10:39,150 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 08:10:39,150 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 08:10:39,150 - ClientManager - INFO - Client: New client site-1@172.25.0.3 joined. Sent token: 539a0426-5e38-4ca6-8274-82949b1f7e22.  Total clients: 1
+2025-07-29 08:10:39,151 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 08:10:39,151 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 08:10:39,152 - ClientManager - INFO - Client: New client site-2@172.25.0.5 joined. Sent token: 21a68e96-9546-4cec-88ac-315b71043a91.  Total clients: 2
+2025-07-29 08:14:51,992 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 08:14:52,061 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 08:14:52,151 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 08:14:52,152 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:40514] is starting
+2025-07-29 08:14:52,652 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:40514
+2025-07-29 08:14:52,652 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 08:14:52,653 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 08:14:52,654 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 08:14:52,655 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 08:14:52,656 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 08:14:52,656 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 08:14:52,657 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 08:14:52,658 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 08:14:52,658 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 08:14:52,662 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 08:14:52,662 - root - INFO - Server started
+2025-07-29 08:14:52,666 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.5:41266 SSL site-1] is created: PID: 1
+2025-07-29 08:14:53,156 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 08:14:53,608 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.2:37908 SSL site-2] is created: PID: 1
+2025-07-29 08:14:54,963 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 08:14:54,963 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 08:14:54,963 - ClientManager - INFO - Client: New client site-2@172.25.0.2 joined. Sent token: e68df4df-66cf-4368-bf25-095d375d5a86.  Total clients: 1
+2025-07-29 08:14:55,071 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 08:14:55,071 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 08:14:55,071 - ClientManager - INFO - Client: New client site-1@172.25.0.5 joined. Sent token: ac571ef3-53a2-45ee-9b06-7bdf5d3138db.  Total clients: 2
+2025-07-29 08:15:45,742 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 08:15:45,810 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 08:15:45,898 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 08:15:45,899 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:62000] is starting
+2025-07-29 08:15:46,399 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:62000
+2025-07-29 08:15:46,399 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 08:15:46,402 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 08:15:46,403 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 08:15:46,403 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 08:15:46,403 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 08:15:46,403 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 08:15:46,403 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 08:15:46,404 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 08:15:46,404 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 08:15:46,407 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 08:15:46,407 - root - INFO - Server started
+2025-07-29 08:15:46,903 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 08:15:47,347 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.2:54188 SSL site-1] is created: PID: 1
+2025-07-29 08:15:47,370 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.3:39096 SSL site-2] is created: PID: 1
+2025-07-29 08:15:48,750 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 08:15:48,750 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 08:15:48,750 - ClientManager - INFO - Client: New client site-1@172.25.0.2 joined. Sent token: 002892ed-50b0-431f-b62e-29717cfed533.  Total clients: 1
+2025-07-29 08:15:48,756 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 08:15:48,756 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 08:15:48,756 - ClientManager - INFO - Client: New client site-2@172.25.0.3 joined. Sent token: 473bed5b-98b1-46a9-a4ad-f47b35d2463e.  Total clients: 2
+2025-07-29 08:17:37,231 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 08:17:37,302 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 08:17:37,392 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 08:17:37,392 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:38646] is starting
+2025-07-29 08:17:37,893 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:38646
+2025-07-29 08:17:37,893 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 08:17:37,896 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 08:17:37,896 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 08:17:37,897 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 08:17:37,897 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 08:17:37,897 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 08:17:37,898 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 08:17:37,898 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 08:17:37,898 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 08:17:37,901 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 08:17:37,901 - root - INFO - Server started
+2025-07-29 08:17:38,397 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 08:17:38,876 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.4:51544 SSL site-2] is created: PID: 1
+2025-07-29 08:17:38,883 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.3:46436 SSL site-1] is created: PID: 1
+2025-07-29 08:17:40,321 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 08:17:40,322 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 08:17:40,322 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 08:17:40,322 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 08:17:40,323 - ClientManager - INFO - Client: New client site-1@172.25.0.3 joined. Sent token: 6cb400a5-e00e-45f9-9624-afa24c8e24f6.  Total clients: 1
+2025-07-29 08:17:40,324 - ClientManager - INFO - Client: New client site-2@172.25.0.4 joined. Sent token: 798ffbe0-de91-4145-a02c-6fb8d3ec6471.  Total clients: 2
+2025-07-29 08:17:51,036 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-29 08:17:51,037 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-29 08:22:20,734 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 08:22:20,805 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 08:22:20,893 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 08:22:20,894 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:46275] is starting
+2025-07-29 08:22:21,394 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:46275
+2025-07-29 08:22:21,395 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 08:22:21,397 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 08:22:21,397 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 08:22:21,398 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 08:22:21,398 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 08:22:21,399 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 08:22:21,399 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 08:22:21,399 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 08:22:21,400 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 08:22:21,402 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 08:22:21,403 - root - INFO - Server started
+2025-07-29 08:22:21,411 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.5:51498 SSL site-1] is created: PID: 1
+2025-07-29 08:22:21,898 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 08:22:22,382 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.2:48342 SSL site-2] is created: PID: 1
+2025-07-29 08:22:23,740 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 08:22:23,740 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 08:22:23,740 - ClientManager - INFO - Client: New client site-2@172.25.0.2 joined. Sent token: 207da7e7-2c4e-4508-b788-be5840d98080.  Total clients: 1
+2025-07-29 08:22:23,820 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 08:22:23,820 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 08:22:23,821 - ClientManager - INFO - Client: New client site-1@172.25.0.5 joined. Sent token: a14e5ea4-d950-437d-8f3a-a72ca9d88e16.  Total clients: 2
+2025-07-29 08:23:32,564 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-29 08:23:32,642 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-29 08:24:17,889 - ServerDeployer - INFO - server heartbeat timeout set to 600
+2025-07-29 08:24:17,977 - CoreCell - INFO - server: creating listener on grpc://0:8002
+2025-07-29 08:24:18,083 - CoreCell - INFO - server: created backbone external listener for grpc://0:8002
+2025-07-29 08:24:18,083 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:47317] is starting
+2025-07-29 08:24:18,584 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:47317
+2025-07-29 08:24:18,584 - conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2025-07-29 08:24:18,587 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-07-29 08:24:18,587 - FederatedServer - INFO - max_reg_duration=60.0
+2025-07-29 08:24:18,588 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-07-29 08:24:18,588 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-07-29 08:24:18,588 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-07-29 08:24:18,588 - ObjectStreamer - INFO - registered processor_factory: channel='log_streaming' topic='*' _ChunkConsumerFactory
+2025-07-29 08:24:18,589 - Server - INFO - added secure port at 0.0.0.0:8002
+2025-07-29 08:24:18,589 - ServerDeployer - INFO - deployed FLARE Server.
+2025-07-29 08:24:18,592 - hci - INFO - Starting Admin Server server1 on Port 8003
+2025-07-29 08:24:18,592 - root - INFO - Server started
+2025-07-29 08:24:18,610 - conn_manager - INFO - Connection [CN00002 0.0.0.0:8002 <= ipv4:172.25.0.5:35142 SSL site-2] is created: PID: 1
+2025-07-29 08:24:19,088 - ServerState - INFO - Got the primary sp: server1 fl_port: 8002 SSID: ebc6125d-0a56-4688-9b08-355fe9e4d61a. Turning to hot.
+2025-07-29 08:24:19,539 - conn_manager - INFO - Connection [CN00003 0.0.0.0:8002 <= ipv4:172.25.0.3:43294 SSL site-1] is created: PID: 1
+2025-07-29 08:24:20,869 - ClientManager - INFO - identity verified for client 'site-1'
+2025-07-29 08:24:20,869 - ClientManager - INFO - authenticated client site-1: client_fqcn='site-1'
+2025-07-29 08:24:20,870 - ClientManager - INFO - Client: New client site-1@172.25.0.3 joined. Sent token: a789dcd4-ba25-44d0-a814-ba1282703e8b.  Total clients: 1
+2025-07-29 08:24:20,968 - ClientManager - INFO - identity verified for client 'site-2'
+2025-07-29 08:24:20,969 - ClientManager - INFO - authenticated client site-2: client_fqcn='site-2'
+2025-07-29 08:24:20,969 - ClientManager - INFO - Client: New client site-2@172.25.0.5 joined. Sent token: eb38d485-67cc-4db3-83a7-bcb5da15b4c2.  Total clients: 2
+2025-07-29 08:29:34,663 - DefaultJobScheduler - INFO - [identity=server, run=?] - Try to schedule job 723ebdc0-1408-4ddf-a909-d239268c75b4, get result: (scheduled).
+2025-07-29 08:29:34,663 - JobRunner - INFO - [identity=server, run=?] - Got the job: 723ebdc0-1408-4ddf-a909-d239268c75b4 from the scheduler to run
+2025-07-29 08:29:34,678 - JobRunner - INFO - [identity=server, run=?] - Application app deployed to the server for job: 723ebdc0-1408-4ddf-a909-d239268c75b4
+2025-07-29 08:29:34,678 - JobRunner - INFO - [identity=server, run=?] - App app to be deployed to the clients: site-1,site-2 for run: 723ebdc0-1408-4ddf-a909-d239268c75b4
+2025-07-29 08:29:34,720 - JobRunner - INFO - [identity=server, run=?] - Updated the schedule history of Job: 723ebdc0-1408-4ddf-a909-d239268c75b4
+2025-07-29 08:29:34,725 - ServerProcessJobLauncher - INFO - Launch the job in process ID: 36
+2025-07-29 08:29:34,725 - ServerEngine - INFO - Launch job_id: 723ebdc0-1408-4ddf-a909-d239268c75b4  with job launcher: <class 'nvflare.app_common.job_launcher.server_process_launcher.ServerProcessJobLauncher'> 
+2025-07-29 08:29:35,151 - conn_manager - INFO - Connection [CN00004 127.0.0.1:47317 <= 127.0.0.1:48924] is created: PID: 1
+2025-07-29 08:29:36,034 - conn_manager - INFO - Connection [CN00005 0.0.0.0:8002 <= ipv4:172.25.0.5:45942 SSL site-2] is created: PID: 1
+2025-07-29 08:29:37,043 - conn_manager - INFO - Connection [CN00006 0.0.0.0:8002 <= ipv4:172.25.0.5:45950 SSL site-2] is created: PID: 1
+2025-07-29 08:29:37,743 - conn_manager - INFO - Connection [CN00003 Not Connected] is closed PID: 1
+2025-07-29 08:29:38,736 - conn_manager - INFO - Connection [CN00007 0.0.0.0:8002 <= ipv4:172.25.0.3:56374 SSL site-1] is created: PID: 1
+2025-07-29 08:29:39,036 - conn_manager - INFO - Connection [CN00008 0.0.0.0:8002 <= ipv4:172.25.0.3:56390 SSL site-1] is created: PID: 1
+2025-07-29 08:29:39,081 - conn_manager - INFO - Connection [CN00009 0.0.0.0:8002 <= ipv4:172.25.0.5:45958 SSL site-2] is created: PID: 1
+2025-07-29 08:29:39,542 - conn_manager - INFO - Connection [CN00010 0.0.0.0:8002 <= ipv4:172.25.0.3:56406 SSL site-1] is created: PID: 1
+2025-07-29 08:29:41,486 - conn_manager - INFO - Connection [CN00011 0.0.0.0:8002 <= ipv4:172.25.0.3:56416 SSL site-1] is created: PID: 1
+2025-07-29 08:29:54,726 - CoreCell - ERROR - [ME=server O=? D=site-1 F=? T=? CH=admin TP=admin SCH=? STP=? SEQ=?] timeout on Request 89cfb03a-a817-4c78-977e-b5b1262c3b47 for ['admin'] after 20 secs
+2025-07-29 08:29:54,726 - JobRunner - INFO - [identity=server, run=?] - Started run: 723ebdc0-1408-4ddf-a909-d239268c75b4 for clients: site-1,site-2
+2025-07-29 08:29:54,732 - JobRunner - INFO - [identity=server, run=?] - Job: 723ebdc0-1408-4ddf-a909-d239268c75b4 started to run, status changed to RUNNING.
+2025-07-29 08:56:15,062 - conn_manager - INFO - Connection [CN00011 Not Connected] is closed PID: 1
+2025-07-29 08:56:15,070 - conn_manager - INFO - Connection [CN00010 Not Connected] is closed PID: 1
+2025-07-29 08:56:15,096 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 1
+2025-07-29 08:56:15,106 - conn_manager - INFO - Connection [CN00009 Not Connected] is closed PID: 1
+2025-07-29 08:56:15,128 - conn_manager - INFO - Connection [CN00008 Not Connected] is closed PID: 1
+2025-07-29 08:56:15,155 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 1
+2025-07-29 08:56:15,655 - conn_manager - INFO - Connection [CN00004 Not Connected] is closed PID: 1
+2025-07-29 08:59:05,162 - conn_manager - INFO - Connection [CN00002 Not Connected] is closed PID: 1
+2025-07-29 08:59:05,204 - conn_manager - INFO - Connection [CN00007 Not Connected] is closed PID: 1
