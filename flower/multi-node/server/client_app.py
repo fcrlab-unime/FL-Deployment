@@ -76,6 +76,7 @@ def client_fn(context: Context):
     trainloader, valloader = Net.load_data(dataset_path, batch_size)
 
     # Instantiate the model
+    Net.set_seed(context.run_config["seed"])
     net = Net()
 
     # Return a FlowerClient instance

@@ -31,14 +31,15 @@ serverapp = "server_app:app"
 clientapp = "client_app:app"
 
 [tool.flwr.app.config]
-num-server-rounds = 3
+num-server-rounds = 15
 fraction-evaluate = 1
 local-epochs = 1
 learning-rate = 0.01
 batch-size = 32
-num-partitions = 2
-model = "resnet18"
-dataset-name = "cifar10"
+num-partitions = 5
+model = "cnn"
+dataset-name = "fashion_mnist"
+seed = 42
 
 [tool.flwr.federations]
 default = "embedded-federation"

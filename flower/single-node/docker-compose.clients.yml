@@ -12,7 +12,7 @@ services:
     command: []
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ../../datasets/cifar10/2_partitions/cifar10_part_1:/app/dataset/cifar10/2_partitions/cifar10_part_1
+      - ../../datasets/mnist/2_partitions/mnist_part_1:/app/dataset/mnist/2_partitions/mnist_part_1
       - ../../models:/app/models
     environment:
       - SUPERLINK_IP=aggregator
@@ -35,7 +35,7 @@ services:
     command: []
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ../../datasets/cifar10/2_partitions/cifar10_part_2:/app/dataset/cifar10/2_partitions/cifar10_part_2
+      - ../../datasets/mnist/2_partitions/mnist_part_2:/app/dataset/mnist/2_partitions/mnist_part_2
       - ../../models:/app/models
     environment:
       - SUPERLINK_IP=aggregator

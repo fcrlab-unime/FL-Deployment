@@ -37,8 +37,8 @@ local-epochs = 1
 learning-rate = 0.01
 batch-size = 32
 num-partitions = 2
-model = "resnet18"
-dataset-name = "cifar10"
+model = "dnn"
+dataset-name = "mnist"
 seed = 42
 
 [tool.flwr.federations]

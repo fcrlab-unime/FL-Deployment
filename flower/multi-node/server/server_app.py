@@ -103,8 +103,9 @@ def server_fn(context: Context):
     except (ImportError, AttributeError) as e:
         raise ValueError(f"Could not load model '{model_name.upper()}' from 'models/{model_name}.py'") from e
     
-
+    
     # Initialize model parameters
+    Net.set_seed(context.run_config["seed"])
     ndarrays = Net().get_weights()
     parameters = ndarrays_to_parameters(ndarrays)
 
