@@ -1,0 +1,341 @@
+services:
+
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.47.0
+    container_name: cadvisor
+    privileged: true
+    deploy:
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9095:9090"
+    volumes:
+      - ../config/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - server1
+    networks:
+      - default
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "9094:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ../config/grafana.ini:/etc/grafana/grafana.ini
+      - ../config/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ../config/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - prometheus
+    networks:
+      - default
+  server1:
+    build: nvflare_compose
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.server.server_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_server.json
+    - --set
+    - secure_train=true
+    - config_folder=config
+    - org=nvidia
+    container_name: server1
+    image: ${IMAGE_NAME}
+    ports:
+    - 8002:8002
+    - 8003:8003
+    volumes:
+    - ./server1:${WORKSPACE}
+    - nvflare_svc_persist:/tmp/nvflare/
+
+  site-1:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-1
+    - org=nvidia
+    - config_folder=config
+    container_name: site-1
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-1:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-10:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-10
+    - org=nvidia
+    - config_folder=config
+    container_name: site-10
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-10:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-2:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-2
+    - org=nvidia
+    - config_folder=config
+    container_name: site-2
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-2:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-3:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-3
+    - org=nvidia
+    - config_folder=config
+    container_name: site-3
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-3:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-4:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-4
+    - org=nvidia
+    - config_folder=config
+    container_name: site-4
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-4:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-5:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-5
+    - org=nvidia
+    - config_folder=config
+    container_name: site-5
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-5:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-6:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-6
+    - org=nvidia
+    - config_folder=config
+    container_name: site-6
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-6:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-7:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-7
+    - org=nvidia
+    - config_folder=config
+    container_name: site-7
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-7:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-8:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-8
+    - org=nvidia
+    - config_folder=config
+    container_name: site-8
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-8:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+  site-9:
+    build: nvflare_compose
+    labels:
+      - "io.cadvisor.scrape=true"
+      - "io.cadvisor.container=true"
+    command:
+    - ${PYTHON_EXECUTABLE}
+    - -u
+    - -m
+    - nvflare.private.fed.app.client.client_train
+    - -m
+    - ${WORKSPACE}
+    - -s
+    - fed_client.json
+    - --set
+    - secure_train=true
+    - uid=site-9
+    - org=nvidia
+    - config_folder=config
+    container_name: site-9
+    image: ${IMAGE_NAME}
+    volumes:
+    - ./site-9:${WORKSPACE}
+    - ../../../../../datasets/fashion_mnist/10_partitions:/data/10_partitions
+    - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  nvflare_svc_persist: null
+  grafana-storage:
+  model-storage:
+  dataset-storage:
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
